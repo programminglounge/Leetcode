@@ -148,6 +148,12 @@ Input: quality = [3, 1, 10,  10,  1],  wage = [4, 8, 2,  2,  7], k=3 <br>
 Output: 30.6667 <br>
 Explanation: we pay 4 to the 0th worker and 13.3333 to the 2nd and 3rd worker seperately <br>
 
+Constraints:
+<ul> 
+  <li>n == quality.length == wage.length</li>
+  <li>1 <= k <= n <= 10<sup>4</sup></li>
+  <li>1 <= quality[i], wage[i] <= 10<sup>4</sup></li>
+</ul>
 --------------------------------------------------------------------
 
 (Medium)  198. House Robber <br>
@@ -171,10 +177,36 @@ Output: 12 <br>
 Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1) <br>
 Total amount you can rob = 2+9+1= 12 <br>
 
+Constraints:
+<ul>
+  <li> 1<= nums.length <= 100 </li>
+  <li> 0 <= nums[i] <= 400 </li>
+</ul>
+
 ---------------------------------------------------
 
-(Medium) 7. Reverse Integer
+(Medium) 7. Reverse Integer <br>
 
+Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32 bit integer range [-2<sup>32</sup>, 2<sup>31</sup>-1] then return 0. <br>
+
+<b>Assume the enviornment does not allow you to store 64 bit integers (signed or unsigned)</b><br>
+
+Example 1: <br>
+
+Input: x = 123 <br>
+Output: 321 <br><br>
+
+Example 2:<br>
+
+Input: x= -123 <br>
+Output: -321 <br><br>
+
+Example 3: <br>
+Input: x = 120 <br>
+Output: 21 <br><br>
+
+Constraints:<br>
+-2<sup>31</sup> <= x <= 2<sup>31</sup>-1
 
 ----------------------------------------------------
 (Medium) 907. Sum of Subarray Minimums
@@ -184,3 +216,64 @@ Since the answer may be large, return the answer modulo 10<sup>9</sup>+7
 Example 1:
 <b>Input</b>: arr = [3, 1, 2, 4]
 Output: 17
+Explanation: 
+Subarrays are [3], [1], [2], [4], [3, 1], [1, 2], [2, 4], [3, 1, 2], [1, 2, 4], [3, 1, 2, 4]
+Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1
+Sum is 17
+
+Example 2:
+Input: arr = [11, 81, 94, 43, 3]
+Output: 444
+
+Constraints:
+<ul><li>1 <= arr.length <= 3 *10<sup>4</sup></li>
+  <li> 1 <= arr[i] <= 3 *10<sup>4</sup></li>
+</ul>
+
+
+--------------------------------------------------------------------------------
+(Medium) 1488. Avoid Flood in The City <br>
+
+Your country has an infinite number of lakes. Initially, all the lakes are empty, but when it rains over the nth lake, the nth lake becomes full of water. If it rains over a lake that is full of water, there will be a <b>flood</b>. Your goal is to avoid floods in any lake. <br>
+
+Given an integer array rains where: <br><ul>
+  <li>rains[i] > 0 means there will be rains over the rains[i] lake.</li>
+<li>rains[i] == 0 means there are no rains this day and you choose <b>one lake</b> this day and dry it</li></ul><br>
+
+Return an array ans where: <br><ul>
+  <li> ans.length == rains.length</li>
+  <li> ans[i] == -1 if rains[i] >0 </li>
+  <li> ans[i] is the lake you choose to dry in the ith day if rains[i] == 0 </li></ul><br>
+
+If there are multiple valid answers return any of them. If it is impossible to avoid floods return <b>an empty array</b>
+Notice that if you chose to dry a full lake, it becomes empty, but if you chose to dry an empty lake, nothing changes.
+
+Example 1:
+Input: rains = [1, 2, 3, 4]
+Output : [-1, -1, -1, -1]
+Explanation: After the first day full lakes are [1]
+After the second day full lakes are [1, 2]
+After the third day full lakes are [1, 2, 3]
+After the fourth day full lakes are [1, 2, 3, 4]
+There's no day to dry any lake and there is no flood in any lake
+
+Example 2:
+Input: rains = [1, 2, 0, 0, 2, 1]
+Output : [-1, -1, 2, 1, -1, -1]
+Explanation: After the first day full lakes are [1]
+After the second day full lakes are [1, 2]
+After the third day we dry lake 2. Full lakes are [1]
+After the fourth day we dry lake 1. There is no full lakes.
+After the fifth day, full lakes are [2].
+After the sixth day, full lakes are [1, 2].
+It is easy to that this scenario is flood-free. [-1, -1, 1, 2, -1, -1] is another acceptable scenario.
+
+Example 3:
+Input: rains = [1, 2, 0, 1, 2]
+Output: []
+Explanation: After the second day, full lakes are [1, 2]. We have to dry one lake on the third day. After that, it will rain over lakes [1, 2]. It's easy to prove that no matter which lake you choose to dry in the 3rd day, the other one will flood.
+
+Constraints:
+<ul><li> 1 <= rains.length <= 10<sup>5</sup> </li>
+  <li> 0<=rains[i] <= 10<sup>9</sup></li>
+  </ul>
