@@ -1,5 +1,9 @@
 // I solved this problem using a greedy approach
 //
+#include <iostream>
+#include <vector>
+using namespace std;
+
 vector<int> avoidFlood(vector<int> & rains) {
   int max = 0;
   for (int i=0; i<rains.size(); i++)
@@ -31,7 +35,8 @@ vector<int> avoidFlood(vector<int> & rains) {
     else
     {
       //we will use a greedy algorithm where it will look at each lake which is 
-      //full and determine which one will show up faster in the sequence line and dry up that lake
+      //full and determine which one will show up faster in the sequence of rains and 
+      //choose that lake as the one to dry first.
       int positions = rains.size();
       int value = 0;
       for (int j = 0; j<lakefull.size(); j++)
@@ -66,10 +71,10 @@ vector<int> avoidFlood(vector<int> & rains) {
 int main()
 {
   vector<int> rains = {1, 2, 0, 1, 2};
-  vector <int> rains2 = avoidFlood(rains);
-  for (int i = 0; i<rains2.size(); i++)
+  vector <int> results = avoidFlood(rains);
+  for (int i = 0; i<results.size(); i++)
   {
-    cout << rains2[i] << " ";
+    cout << results[i] << " ";
   }
   cout << endl;
   return 0;
