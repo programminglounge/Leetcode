@@ -1,3 +1,5 @@
+// Using a recursive alogrithm I implemented Pow(x, n)
+
 #include <iostream>
 using namespace std;
 
