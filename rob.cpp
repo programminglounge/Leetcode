@@ -10,6 +10,10 @@
 //Then I use the sort built in function of c++, to sort the homes in increasing order based on their num value
 //Finally I check to make sure the left and right side of that house is zero (zero meaning it has not been robbed) 
 
+#include <iostream>
+#include <vector>
+using namespace std;
+
 int rob(vector <int> & nums) {
   long long sum = 0;
   vector<pair<int, int>> vect;
