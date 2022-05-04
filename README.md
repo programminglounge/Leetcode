@@ -54,12 +54,11 @@ Input: x = 2.0, n = -2
 <br>
 Output: 0.25
 
-Constraints:
--100.0 < x < 100.0
-<br>
--2<sup>31</sup> <= n <= 2<sup>31</sup>-1
-<br>
--10<sup>4</sup> <= x<sup>n</sup> <= 10<sup>4</sup>
+Constraints: <ul><li>
+  -100.0 < x < 100.0</li>
+  <li>-2<sup>31</sup> <= n <= 2<sup>31</sup>-1</li>
+<li>-10<sup>4</sup> <= x<sup>n</sup> <= 10<sup>4</sup></li>
+</ul>
 
 --------------------------------------------------
 
@@ -67,8 +66,8 @@ Constraints:
 You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
 
 Example 1: <br>
-Input: nums = [5, 2, 6, 1] <br>
-Output: [2, 1, 1, 0] <br>
+<b>Input</b>: nums = [5, 2, 6, 1] <br>
+<b>Output</b>: [2, 1, 1, 0] <br>
 Explanation: To the right of 5 there are 2 smaller elements (2 and 1) <br>
 To the right of 2 there is only 1 smaller element (1). <br>
 To the right of 6 there is 1 smaller element(1) <br>
@@ -83,9 +82,10 @@ Input: nums = [-1, -1] <br>
 Output: [0, 0] <br>
 
 Constraints:
-
-1 <= nums.length <= 10<sup>5 </sup> <br>
--10<sup>4</sup> <= nums[i] <= 10<sup>4 </sup>
+<ul><li>
+  1 <= nums.length <= 10<sup>5 </sup> </li>
+  <li>-10<sup>4</sup> <= nums[i] <= 10<sup>4 </sup></li>
+  </ul>
 
 --------------------------------------------------
 
@@ -117,9 +117,10 @@ Input: word = "ltcd"
 Output: 0
 Explanation: There are no vowels in any substring of "ltcd" <br>
 
-Constraints: <br>
-1 <= word.length <= 10<sup>5</sup> <br>
-word consists of lowecase English letters
+Constraints: <ul><li>
+  1 <= word.length <= 10<sup>5</sup> </li>
+  <li>word consists of lowecase English letters</li>
+  </ul>
 
 ----------------------------------------------------------------
 
@@ -136,17 +137,17 @@ Given the integer k, return the least amount of money needed to form a paid grou
 Answers within 10<sup>-5</sup> of the actual answer will be accepted.
 
 Example 1:
-Input: quality = [10, 20, 5],  wage = [70, 50, 30], k=2
+<b>Input</b>: quality = [10, 20, 5],  wage = [70, 50, 30], k=2
 <br>
-Output: 105.000
+<b>Output</b>: 105.000
 <br>
-Explanation: we pay 70 to the 0th worker and 35 to the 2nd worker
+<b>Explanation</b>: we pay 70 to the 0th worker and 35 to the 2nd worker
 <br>
 <br>
 Example 2: <br>
-Input: quality = [3, 1, 10,  10,  1],  wage = [4, 8, 2,  2,  7], k=3 <br>
-Output: 30.6667 <br>
-Explanation: we pay 4 to the 0th worker and 13.3333 to the 2nd and 3rd worker seperately <br>
+<b>Input</b>: quality = [3, 1, 10, 10, 1],  wage = [4, 8, 2, 2, 7], k=3 <br>
+<b>Output</b>: 30.6667 <br>
+<b>Explanation</b>: we pay 4 to the 0th worker and 13.3333 to the 2nd and 3rd worker seperately <br>
 
 Constraints:
 <ul> 
@@ -172,9 +173,9 @@ Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3) <br>
 Total amount you can rob = 1 + 3 = 4 <br>
 
 Example 2: <br>
-Input: nums = [2, 7, 9, 3, 1] <br>
-Output: 12 <br>
-Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1) <br>
+<b>Input</b>: nums = [2, 7, 9, 3, 1] <br>
+<b>Output</b>: 12 <br>
+<b>Explanation</b>: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1) <br>
 Total amount you can rob = 2+9+1= 12 <br>
 
 Constraints:
@@ -205,8 +206,8 @@ Example 3: <br>
 Input: x = 120 <br>
 Output: 21 <br><br>
 
-Constraints:<br>
--2<sup>31</sup> <= x <= 2<sup>31</sup>-1
+Constraints:<ul><li>
+  -2<sup>31</sup> <= x <= 2<sup>31</sup>-1 </li></ul>
 
 ----------------------------------------------------
 (Medium) 907. Sum of Subarray Minimums
@@ -215,7 +216,7 @@ Since the answer may be large, return the answer modulo 10<sup>9</sup>+7
 
 Example 1:
 <b>Input</b>: arr = [3, 1, 2, 4]
-Output: 17
+<b>Output</b>: 17 <br>
 Explanation: 
 Subarrays are [3], [1], [2], [4], [3, 1], [1, 2], [2, 4], [3, 1, 2], [1, 2, 4], [3, 1, 2, 4]
 Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1
@@ -249,29 +250,29 @@ If there are multiple valid answers return any of them. If it is impossible to a
 Notice that if you chose to dry a full lake, it becomes empty, but if you chose to dry an empty lake, nothing changes.
 
 Example 1:
-Input: rains = [1, 2, 3, 4]
-Output : [-1, -1, -1, -1]
-Explanation: After the first day full lakes are [1]
-After the second day full lakes are [1, 2]
-After the third day full lakes are [1, 2, 3]
-After the fourth day full lakes are [1, 2, 3, 4]
-There's no day to dry any lake and there is no flood in any lake
+Input: rains = [1, 2, 3, 4] <br>
+Output : [-1, -1, -1, -1] <br>
+Explanation: After the first day full lakes are [1] <br>
+After the second day full lakes are [1, 2] <br>
+After the third day full lakes are [1, 2, 3] <br>
+After the fourth day full lakes are [1, 2, 3, 4] <br>
+There's no day to dry any lake and there is no flood in any lake <br>
 
-Example 2:
-Input: rains = [1, 2, 0, 0, 2, 1]
-Output : [-1, -1, 2, 1, -1, -1]
-Explanation: After the first day full lakes are [1]
-After the second day full lakes are [1, 2]
-After the third day we dry lake 2. Full lakes are [1]
-After the fourth day we dry lake 1. There is no full lakes.
-After the fifth day, full lakes are [2].
-After the sixth day, full lakes are [1, 2].
-It is easy to that this scenario is flood-free. [-1, -1, 1, 2, -1, -1] is another acceptable scenario.
+Example 2:<br>
+<b>Input</b>: rains = [1, 2, 0, 0, 2, 1] <br>
+<b>Output</b> : [-1, -1, 2, 1, -1, -1] <br>
+<b>Explanation</b>: After the first day full lakes are [1] <br>
+After the second day full lakes are [1, 2] <br>
+After the third day we dry lake 2. Full lakes are [1] <br>
+After the fourth day we dry lake 1. There is no full lakes. <br>
+After the fifth day, full lakes are [2]. <br>
+After the sixth day, full lakes are [1, 2]. <br>
+It is easy to that this scenario is flood-free. [-1, -1, 1, 2, -1, -1] is another acceptable scenario. <br>
 
-Example 3:
-Input: rains = [1, 2, 0, 1, 2]
-Output: []
-Explanation: After the second day, full lakes are [1, 2]. We have to dry one lake on the third day. After that, it will rain over lakes [1, 2]. It's easy to prove that no matter which lake you choose to dry in the 3rd day, the other one will flood.
+Example 3: <br>
+<b>Input</b>: rains = [1, 2, 0, 1, 2] <br>
+<b>Output</b>: [] <br>
+<b>Explanation</b>: After the second day, full lakes are [1, 2]. We have to dry one lake on the third day. After that, it will rain over lakes [1, 2]. It's easy to prove that no matter which lake you choose to dry in the 3rd day, the other one will flood.
 
 Constraints:
 <ul><li> 1 <= rains.length <= 10<sup>5</sup> </li>
