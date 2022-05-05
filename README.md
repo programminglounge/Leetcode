@@ -16,18 +16,18 @@ Example 1:
 
 Example 2:
 <br>
-Input: dividend = 7, divisor = -3
+<b>Input</b>: dividend = 7, divisor = -3
 <br>
-Output: -2
+<b>Output</b>: -2
 <br>
-Explanation: 7/-3 = -2.3333 which is truncated to -2.
+<b>Explanation</b>: 7/-3 = -2.3333 which is truncated to -2.
 <br>
 <br>
 
-Constraints:
--2<sup>31</sup> <= dividend, divisor <= 2<sup>31</sup> -1
-<br>
-divisor != 0
+Constraints: <ul><li>
+  -2<sup>31</sup> <= dividend, divisor <= 2<sup>31</sup> -1 </li>
+  <li>divisor != 0 </li>
+  </ul>
 
 ---------------------------------------------------
 
@@ -43,16 +43,16 @@ Output: 1024.0
 
 Example 2: 
 <br>
-Input: x= 2.1, n = 3
+  <b>Input</b>: x= 2.1, n = 3
 <br>
-Output: 9.261
+  <b>Output</b>: 9.261
 <br>
 
 Example 3:
 <br>
-Input: x = 2.0, n = -2
+<b>Input</b>: x = 2.0, n = -2
 <br>
-Output: 0.25
+<b>Output</b>: 0.25
 
 Constraints: <ul><li>
   -100.0 < x < 100.0</li>
@@ -74,12 +74,12 @@ To the right of 6 there is 1 smaller element(1) <br>
 To the right of 1 there is 0 smaller element. <br>
 
 Example 2: <br>
-Input: nums = [-1] <br>
-Output: [0] <br>
+<b>Input</b>: nums = [-1] <br>
+<b>Output</b>: [0] <br>
 
 Example 3: <br>
-Input: nums = [-1, -1] <br>
-Output: [0, 0] <br>
+<b>Input</b>: nums = [-1, -1] <br>
+<b>Output</b>: [0, 0] <br>
 
 Constraints:
 <ul><li>
@@ -136,7 +136,7 @@ a group of k workers, we must pay them according to the following rules: <br>
 Given the integer k, return the least amount of money needed to form a paid group satisfying the above conditions. 
 Answers within 10<sup>-5</sup> of the actual answer will be accepted.
 
-Example 1:
+Example 1:<br>
 <b>Input</b>: quality = [10, 20, 5],  wage = [70, 50, 30], k=2
 <br>
 <b>Output</b>: 105.000
@@ -147,7 +147,7 @@ Example 1:
 Example 2: <br>
 <b>Input</b>: quality = [3, 1, 10, 10, 1],  wage = [4, 8, 2, 2, 7], k=3 <br>
 <b>Output</b>: 30.6667 <br>
-<b>Explanation</b>: we pay 4 to the 0th worker and 13.3333 to the 2nd and 3rd worker seperately <br>
+<b>Explanation</b>: we pay 4 to the 0<sup>th</sup> worker and 13.3333 to the 2<sup>nd</sup> and 3<sup>rd</sup> worker seperately <br>
 
 Constraints:
 <ul> 
@@ -167,8 +167,8 @@ Given an integer array nums representing the amount of money of each house, retu
 without alerting the police. <br>
 
 Example 1: <br>
-Input: nums = [1, 2, 3, 1] <br>
-Output: 4 <br>
+<b>Input</b>: nums = [1, 2, 3, 1] <br>
+<b>Output</b>: 4 <br>
 Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3) <br>
 Total amount you can rob = 1 + 3 = 4 <br>
 
@@ -212,19 +212,19 @@ Constraints:<ul><li>
 ----------------------------------------------------
 (Medium) 907. Sum of Subarray Minimums
 Given an array of integers arr, find the sum of min(b), where b ranges over every (contiguous) subarray of arr.
-Since the answer may be large, return the answer modulo 10<sup>9</sup>+7
+Since the answer may be large, return the answer modulo 10<sup>9</sup>+7 <br>
 
-Example 1:
-<b>Input</b>: arr = [3, 1, 2, 4]
+Example 1: <br>
+<b>Input</b>: arr = [3, 1, 2, 4] <br>
 <b>Output</b>: 17 <br>
-Explanation: 
-Subarrays are [3], [1], [2], [4], [3, 1], [1, 2], [2, 4], [3, 1, 2], [1, 2, 4], [3, 1, 2, 4]
-Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1
-Sum is 17
+<b>Explanation</b>: <br>
+Subarrays are [3], [1], [2], [4], [3, 1], [1, 2], [2, 4], [3, 1, 2], [1, 2, 4], [3, 1, 2, 4] <br>
+Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1 <br>
+Sum is 17 <br>
 
-Example 2:
-Input: arr = [11, 81, 94, 43, 3]
-Output: 444
+Example 2: <br>
+<b>Input</b>: arr = [11, 81, 94, 43, 3] <br>
+<b>Output</b>: 444 <br>
 
 Constraints:
 <ul><li>1 <= arr.length <= 3 *10<sup>4</sup></li>
