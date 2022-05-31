@@ -31,7 +31,7 @@ Constraints: <ul><li>
 
 ---------------------------------------------------
 
-(Medium) 50. Pow(x, n)  
+50. Pow(x, n)  (Medium,  powxn.cpp)
 Implement pow(x, n) which calculates x raised to the power n (i.e., x<sup>n</sup>)
 
 Example 1: 
@@ -278,3 +278,82 @@ Constraints:
 <ul><li> 1 <= rains.length <= 10<sup>5</sup> </li>
   <li> 0<=rains[i] <= 10<sup>9</sup></li>
   </ul>
+  
+------------------------------------------------------------------------------------
+
+172. Factorial Trailing Zeroes (Medium, TrailingZeros.cs)
+
+Given an integer n, return the number of trailing zeros in n!
+
+<b>Example 1:</b><br>
+<b>Input:</b> n = 3 <br>
+<b>Output:</b> 0 <br>
+<b>Explanation:</b> 3! = 6. no trailing zero<br>
+
+<b>Example 2:</b><br>
+<b>Input:</b> n = 5 <br>
+<b>Output:</b> 1 <br>
+<b>Explanation:</b> 5! = 120. one trailing zero<br>
+
+<b>Example 3:</b><br>
+<b>Input:</b> n = 0 <br>
+<b>Output:</b> 0 <br>
+
+<b>Constraints:</b><br>
+
+<ul><li> 0 <= n <= 10<sup>4</sup> </li></ul>
+
+-----------------------------------------------------------------------------
+
+189. Rotate Array (Medium) <br>
+
+Given an array, rotate the array to the right by k steps, where k is non-negative.<br>
+
+<b>Example 1:</b><br>
+<b>Input:</b> nums = [1, 2, 3, 4, 5, 6, 7], k=3 <br>
+<b>Output :</b> [5, 6, 7, 1, 2, 3, 4]<br>
+<b>Explanation:</b><br>
+rotate 1 step to the right: [7, 1, 2, 3, 4, 5, 6] <br>
+rotate 2 steps to the right: [6, 7, 1, 2, 3, 4, 5] <br>
+rotate 3 steps to the right: [5, 6, 7, 1, 2, 3, 4] <br>
+
+<b>Example 2:</b><br>
+<b>Input:</b> nums = [-1, -100, 3, 99], k=2 <br><br>
+<b>Output :</b> [3, 99, -1, -100]<br><br>
+<b>Explanation:</b><br>
+rotate 1 step to the right: [99, -1, -100, 3] <br>
+rotate 2 steps to the right: [3, 99, -1, -100] <br>
+
+<b>Constraints:</b>
+<ul><li> 1<= nums.length <= 10<sup>5</sup></li>
+  <li>-2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> -1</li>
+  <li> 0 <= k <= 10<sup>5</sup></li>
+  </ul>
+  
+-------------------------------------------------------------------
+
+2289. Steps to Make Array Non-decreasing (Medium)
+You are given a 0-indexed integer array nums. In one step, remove all elements nums[i] where nums[i-1] > nums[i] for all 0<i<nums.length
+
+Return the number of steps performed until nums becomes a <b>non-decreasing</b> array.
+
+<b>Example 1:</b><br>
+<b>Input:</b> nums = [5, 3, 4, 4, 7, 3, 6, 11, 8, 5, 11] <br>
+<b>Output:</b> 3<br>
+<b>Explanation:</b> The following are the steps performed:<br>
+- Step 1: [5, <b>3</b>, 4, 4, 7, <b>3</b>, 6, 11, <b>8</b>, <b>5</b>, 11] becomes
+[5, 4, 4, 7, 6, 11, 11]<br>
+- Step 2: [5, <b>4</b>, 4, 7, <b>6</b>, 11, 11] becomes [5, 4, 7, 11, 11]<br>
+- Step 3: [5, <b>4</b>, 7, 11, 11] becomes [5, 7, 11, 11]<br>
+[5, 7, 11, 11] is a non-decreasing array. Therefore, we return 3.<br>
+
+<b>Example 2:</b><br>
+<b>Input:</b> nums = [4, 5, 7, 7, 13] <br>
+<b>Output:</b> 0
+<b>Explanation:</b> nums is alrady a non-decreasing array. Therefore, we return 0
+
+<b>Constraints:</b>
+<ul><li>1 <= nums.length <= 10<sup>5</sup></li>
+  <li> 1 <= nums[i] <= 10<sup>9</sup></li>
+    
+    
