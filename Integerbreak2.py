@@ -30,4 +30,4 @@ def IntegerBreak2(n):
     Max = 0
   return result[n-1]
                       
-  
+print(IntegerBreak2(350))  
