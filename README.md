@@ -332,7 +332,7 @@ rotate 2 steps to the right: [3, 99, -1, -100] <br>
   
 -------------------------------------------------------------------
 
-2289. Steps to Make Array Non-decreasing (Medium)
+2289. Steps to Make Array Non-decreasing (Medium) <br>
 You are given a 0-indexed integer array nums. In one step, remove all elements nums[i] where nums[i-1] > nums[i] for all 0<i<nums.length
 
 Return the number of steps performed until nums becomes a <b>non-decreasing</b> array.
@@ -342,18 +342,95 @@ Return the number of steps performed until nums becomes a <b>non-decreasing</b> 
 <b>Output:</b> 3<br>
 <b>Explanation:</b> The following are the steps performed:<br>
 - Step 1: [5, <b>3</b>, 4, 4, 7, <b>3</b>, 6, 11, <b>8</b>, <b>5</b>, 11] becomes
-[5, 4, 4, 7, 6, 11, 11]<br>
-- Step 2: [5, <b>4</b>, 4, 7, <b>6</b>, 11, 11] becomes [5, 4, 7, 11, 11]<br>
+[5, 4, 4, 7, 6, 11, 11]. <br>
+- Step 2: [5, <b>4</b>, 4, 7, <b>6</b>, 11, 11] becomes [5, 4, 7, 11, 11]. <br>
 - Step 3: [5, <b>4</b>, 7, 11, 11] becomes [5, 7, 11, 11]<br>
 [5, 7, 11, 11] is a non-decreasing array. Therefore, we return 3.<br>
 
 <b>Example 2:</b><br>
 <b>Input:</b> nums = [4, 5, 7, 7, 13] <br>
-<b>Output:</b> 0
-<b>Explanation:</b> nums is alrady a non-decreasing array. Therefore, we return 0
+<b>Output:</b> 0 <br>
+<b>Explanation:</b> nums is alrady a non-decreasing array. Therefore, we return 0<br>
 
 <b>Constraints:</b>
 <ul><li>1 <= nums.length <= 10<sup>5</sup></li>
-  <li> 1 <= nums[i] <= 10<sup>9</sup></li>
+  <li> 1 <= nums[i] <= 10<sup>9</sup></li></ul>
     
+--------------------------------------------------------------------
+
+2240. Number of Ways to Buy Pens and Pencils (Medium) <br>
+
+You are given an integer total indicating the total amount of money you have. You are also given two integers cost1 and cost2 indicating the price of a pen and pencil respectively. You can spend part or all of your money to buy multiple quantities (or none) of each kind of writing utensil.<br>
+  
+Return the number of distinct ways you can buy some number of pens and pencils.<br>
+  
+<b>Example 1:</b><br>
+Input: total = 20, cost1 = 10, cost2 = 5<br>
+Output: 9<br>
+Explanation: The price of a pen is 10 and the price of a pencil is 5.<br>
+-If you buy 0 pens, you can buy 0, 1, 2, 3 or 4 pencils<br>
+-If you buy 1 pen, you can buy 0, 1 or 2 pencils<br>
+-If you buy 2 pens, you can not buy any pencils.<br>
+ The total number of ways to buy pens and pencils is 5+3+1 = 9<br>
+  
+Example 2: <br>
+Input: total = 5, cost1 = 10, cost2 = 10 <br>
+Output: 1 <br>
+Explanation: The price of both pens and pencils are 10, which cost more than total, so you cannot buy any writing utensils. Therefore, there is only one way: buy 0 pens and 0 pencils<br>
+  
+Constraints:<br>
+  <ul><li> 1 <= total, cost1, cost2 <= 10<sup>6</sup></li></ul><br>
     
+-----------------------------------------------------------------------
+ 
+2244. Minimum Rounds to Complete All tasks <br>
+
+You are given a 0-indexed integer array tasks, where tasks[i] represents the difficulty level of a task. In each round, you can complete either 2 or 3 tasks of the same <b>difficulty level</b>.
+Return the <b>minimum</b> rounds required to complete all the tasks or -1 if it is not possible to complete all the tasks. Br>
+  
+<b>Example 1:</b><br>
+<b>Input:</b> tasks = [2, 2, 3, 3, 2, 4, 4, 4, 4, 4] <br>
+Output: 4
+Explanation: To complete all the tasks, a possible plan is: 
+-In the first round, you complete 3 tasks of difficulty level 2
+-In the second round, you complete 2 tasks of difficulty level 3
+-In the third round, you complete 3 tasks of difficulty level 4
+-In the fourth round, you complete 2 tasks of difficulty level 4
+It can be shown that all the tasks cannot be completed in fewer than 4 rounds, so the answer is 4
+
+Example 2:
+Input: tasks = [2, 3, 3]
+Output: -1
+Explanation: There is only 1 task of difficulty level 2, but in each round, you can only complete either 
+2 or 3 tasks of the same difficulty level. Hence you cannot complete all the tasks, and the answer is -1.
+  
+Constraints:
+  <ul><li> 1<= tasks.length <=10<sup>5</sup> </li>
+  <li> 1 <= tasks[i] <= 10<sup>9</sup> </li></ul>
+  
+------------------------------------------------------------------------------------
+
+2233. Maximum Product After K Increments (Medium) <br>
+
+You are given an array of non-negative integers nums and an integer k. In one operation, you may choose <b>any</b> element from nums and increment it by 1
+Return the maximum product of nums after at most k operations. Since the answe may be very large return ir modulo 10<sup>9</sup> + 7
+
+Example 1:<br>
+Input: nums = [0, 4], k = 5 <br>
+<b>Output:</b> 20 <br>
+Explanation: Increment the first number 5 times. Now nums = [5, 4], with a product of 5*4 = 20 <br>
+It can be shown that 20 is maximum product possible, so we return 20<br>
+Note that there may be other ways to increment nums to have the maximum product <br>
+
+Example 2:
+Input: nums = [6, 3, 3, 2], k = 2
+Output: 216
+Explanation: Increment the second number 1 time and increment the fourth number 1 time.
+Now nums =[6, 4, 3, 3], with a product of 6*4*3*3 = 216 <br>
+It can be shown that 216 is maximum product
+
+<b>Constraints:</b><br>
+<ul><li> 1 <= nums.length, k <=10<sup>5</sup></li>
+  <li> 0 <= nums[i] <=10<sup>6</sup></li></ul>
+-------------------------------------------------------------------------------------------
+
