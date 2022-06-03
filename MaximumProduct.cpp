@@ -29,3 +29,10 @@ int maximumProduct (vector <int> & nums, int k)
   }
   return 0;
 }
+
+
+int main()
+{
+  vector<int> nums = {6, 3, 3, 2};
+  cout << maximumProduct(nums, 2) << endl;
+}
