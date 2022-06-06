@@ -434,3 +434,95 @@ It can be shown that 216 is maximum product
   <li> 0 <= nums[i] <=10<sup>6</sup></li></ul>
 -------------------------------------------------------------------------------------------
 
+2139. Minimum Moves to Reach Target Score (Medium) <br><br>
+
+You are playing a game with integers. You start with the integer 1 and you want to reach the integer target.
+
+In one move you can either"
+<ul><li><b>Increment</b> the current integer by one (i.e., x = x + 1)</li>
+  <li><b>Double</b> the current integer (i.e., x = 2 * x)</li></ul>
+  
+You can use the <b>increment</b> operation amu number of times, however you can only use the double operation at most maxDoubles times.
+
+Given the two integers target and maxDoubles, return the minimum number of moves needed to reach target starting with 1.
+
+Example 1:
+Input: target = 5, maxDoubles = 0
+Output: 4
+Explanation: Keep incrementing by 1 until you reach target
+
+Example 2:
+<b>Input:</b> target = 19, maxDoubles = 2 <br>
+<b>Output:</b> 7<br>
+<b>Explanation:</b> Initially, x=1<br> 
+Increment 3 times so x= 4 <br>
+Double once so x = 8<br>
+Increment once so x = 9 <br>
+Double again so x = 18 <br>
+Increment once so x= 19 <br>
+
+<b>Example 3:</b><br>
+<b>Input:</b> target = 10, maxDoubles = 4 <br>
+<b>Output:</b> 4<br>
+<b>Explanation:</b> Initially, x = 1 <br>
+Increment once so x=2<br>
+Double once so x = 4 <br>
+Increment once so x = 5 <br>
+Double again so x = 10 <br>
+
+<b>Constraints:</b>
+<ul><li>1 <=target <= 10<sup>9</sup></li></ul>
+<li> 0 <= maxDoubles <= 100</li></ul>
+----------------------------------------------------------------------------
+
+2007. Find Original Array from Doubled Array (Medium) <br><br>
+
+An integer array original is transformed into a doubled array changed by appending twice the value of every element in original, and then randomly shuffling the resulting array.<br>
+
+Given an array changed, return original if changed is a doubled array. if changed is not a doubled array, return an empty array. The elements in original may be returned in <b>any</b> order<br>
+
+<b>Example 1:</b><br>
+<b>Input:</b> changed = [1, 3, 4, 2, 6, 8]
+<b>Output:</b> [1, 3, 4]
+<b>Explanation:</b> One possible original array could be [1, 3, 4]:<br>
+Twice the value of 1 is 1 *2 = 2 <br>
+Twice the value of 3 is 3 *2 = 6 <br>
+Twice the value of 4 is 4 *2 = 8 <br>
+Other original arrays could be [4, 3, 1] or [3, 1, 4]. <br>
+
+<b>Example 2:</b><br>
+<b>Input:</b> changed = [6, 3, 0, 1]<br>
+<b>Output:</b> []<br>
+<b>Explanation:</b> changed is not a doubled array.
+
+<b>Example 3:</b><br>
+Input: changed = [1]
+Output: []
+Explanation: changed is not a doubled array
+
+Constraints:
+<ul><li> changed.length <= 10<sup>5</sup></li>
+<li>0 <= changed[i] <= 10<sup>5</sup></li></ul>
+
+--------------------------------------------------------------------------
+
+1980. Find Unique Binary String (Medium) <br><br>
+
+Given an array of strings nums cotaining n <b>unique</b> binary strings each of length n, return a binary string of length n that does not appear in nums. If there are multiple answers, you may return <b>any</b> of them<br>
+
+<b>Example 1</b>:<br>
+Input: nums = ["01", "10"]<br>
+Output: "11"<br>
+Explanation: "11" does not appear in nums, "00" would also be correct.<br><br>
+
+<b>Example 2:</b><br>
+<b>Input:</b> nums = ["00", "01"]<br>
+<b>Output:</b> "11"<br>
+<b>Explanation:</b> "11" does not appear in nums. "10" would also be correct<br>
+
+<b>Example 3:</b> <br>
+<b>Input:</b> nums = ["111", "011", "001"]<br>
+<b>Output:</b> "101"<br>
+<b>Explanation:</b> "101" does not appear in nums. "000", "010", "100", and "110" would also be correct.
+
+-------------------------------------------------------------------------
