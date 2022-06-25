@@ -526,3 +526,87 @@ Explanation: "11" does not appear in nums, "00" would also be correct.<br><br>
 <b>Explanation:</b> "101" does not appear in nums. "000", "010", "100", and "110" would also be correct.
 
 -------------------------------------------------------------------------
+
+2191. Sort the Jumbled Numbers (Medium) <br>
+
+You are given a <b>0-indexed</b> integer array mapping which represents the mapping rule of a shuffled decimal system. mapping[i] = j means digit i should be mapped to digit j in this system.<br>
+
+The <b>mapped value</b> of an integer is the new integer obtained by replacing each occurence of digit i in the integer with mapping[i] for all 0 <= i <= 9. <br>
+
+You are also given anoter integer array nums. Return the array nums sorted in non-decreasing order based on the mapped values of its elements. <br>
+
+<b>Notes:</b>
+<ul><li>Elements with the same mapped values should appear in the <b>same relative order</b> as in the input</li>
+  <li> The elements of nums should only be sorted based on their mapped values and <b>not be replaced</b> by them.</li></ul>
+
+<b>Example 1:</b> <br>
+<b>Input:</b> mapping = [8, 9, 4, 0, 2, 1, 3, 5, 7, 6], nums = [991, 338, 38] <br>
+<b>Output: </b> [338, 38, 991] <br>
+<b>Explanation: </b> <br>
+Map the number 991 as follows: <br>
+1. Mapping[9] = 6, so all occurences of the digit 9 will become 6. <br>
+2. Mapping[1] = 9, so all occurences of the digit 1 will become 9. <br>
+Therefore, the mapped value of 991 is 669. 338 maps to 007, or 7, which is also 7 after removing the leading zeros. <br>
+38 maps to 07, which is also 7 after removing leading zeros. Since 338 and 38 share the same mapped value, they should remain in the same relative order, so 338 comes before 38. <br>
+Thus, the sorted array is [338, 38, 991]. <br>
+
+<b>Example 2:</b><br>
+<b>Input: </b> mapping = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], nums = [789, 456, 123] <br>
+<b>Output :</b> [123, 456, 789]
+<b> Explanation: </b> 789 maps to 789, 456 maps to 456, and 123 maps to 123. Thus the sorted array is [123, 456, 789].
+
+<b>Constraints:</b>
+<ul><li> mapping.length == 10 </li>
+  <li> 0 <= mapping[i] <= 9 </li>
+  <li> All the values of mapping[i] are <b>unique</b> </li>
+  <li> 1 <= nums.length <= 3* 10<sup>4</sup></li>
+  <li> 0 <= nums[i] < 10<sup>9</sup></li></ul>
+  
+--------------------------------------------------------------------------------
+
+2225. Find players with zero or one losses (Medium) <br><br>
+
+You are given an integer array matches where matches[i]=[winner<sub>i</sub>, loser<sub>i</sub>] indicates that the player winner<sub>i</sub> defeated player loser<sub>i</sub> in a match. <br>
+
+Return a list answer of size 2 where
+<ul><li> answer[0] is a list of all players that have not lost any matches. </li>
+  <li>answer[1] is a list of all players that have lost exactly one match. </li></ul>
+  
+The values in the two lists should be returned in <b>increasing</b> order.
+
+<b>Note:</b><br>
+<ul><li>You should only consider the players that have played at least one match.</li>
+  <li>the test cases will be generated such that no two matches will have the same outcome</li></ul>
+  
+<b> Example 1: </b><br>
+<b>Input : </b> matches =[[1, 3], [2, 3], [3, 6], [5, 6], [5, 7], [4, 5], [4, 8], [4, 9], [10, 4], [10, 9]] <br>
+<b>Output: </b> [[1, 2, 10], [4, 5, 7, 8]]
+<b>Explanation: </b>Players 1, 2, and 10 have not lost any matches. Players 4, 5, 7, and 8 have each lost one match. Players 3, 6, and 9 each have lost two matches.
+
+<b>Example 2:</b><br>
+<b>Input: </b>matches = [[2, 3], [1, 3], [5, 4], [6, 4]]
+<b>Output: </b>[[1, 2, 5, 6], []]
+<b>Explanation: </b> Players 1, 2, 5, and 6 have not lost any matches. Players 3 and 4 each have lost two matches. Thus, answer[0]=[1, 2, 5, 6] and answer[1] = []
+
+
+<b>Constraints: </b>
+<ul><li>1 <= matches.length <= 10<sup>5</sup></li>
+  <li> matches[i].length == 2 </li>
+  <li> 1 <= winner<sub>i</sub>, loser<sub>i</sub> <= 10<sup>5</sup></li>
+  <li> winner<sub>i</sub> != loser<sub>i</sub></li>
+  <li> All matches[i] are <b>unique</b></li></ul>
+  
+---------------------------------------------------------------------------
+
+2183. Count Array Pairs Divisble by K (Hard) <br><br>
+
+Given a zero indexed integer array nums of length n and an integer k, return the <b>number of pairs</b> (i, j) such that:
+<ul><li> 0<= i < j <= n-1 and</li>
+  <li> nums[i] * nums[j] is divisble by k. </li></ul><br>
+
+<b>Example 1:</b><br>
+<b> Input:</b> nums = [1, 2, 3, 4, 5], k=2 <br>
+<b> Output:</b> 7 <br>
+<b> Explanation:</b> The 7 pairs of indices whore corresponding products are divisble by 2 are (0, 1), (0, 3), (1, 2), (1, 3), (1, 4), (2, 3), and (3, 4).<br>
+
+  
