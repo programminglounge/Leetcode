@@ -527,7 +527,7 @@ Explanation: "11" does not appear in nums, "00" would also be correct.<br><br>
 
 -------------------------------------------------------------------------
 
-2191. Sort the Jumbled Numbers (Medium) <br>
+2191. Sort the Jumbled Numbers (Medium) <br><br>
 
 You are given a <b>0-indexed</b> integer array mapping which represents the mapping rule of a shuffled decimal system. mapping[i] = j means digit i should be mapped to digit j in this system.<br>
 
@@ -607,6 +607,17 @@ Given a zero indexed integer array nums of length n and an integer k, return the
 <b>Example 1:</b><br>
 <b> Input:</b> nums = [1, 2, 3, 4, 5], k=2 <br>
 <b> Output:</b> 7 <br>
-<b> Explanation:</b> The 7 pairs of indices whore corresponding products are divisble by 2 are (0, 1), (0, 3), (1, 2), (1, 3), (1, 4), (2, 3), and (3, 4).<br>
+<b> Explanation:</b> The 7 pairs of indices whose corresponding products are divisble by 2 are (0, 1), (0, 3), (1, 2), (1, 3), (1, 4), (2, 3), and (3, 4).<br>
+Their products are 2, 4, 6, 8, 10, 12 and 20 respectively
+Other pairs such as (0, 2) and (2, 4) have products 3 and 15 repectively, which are not divisible by 2. <br>
 
+<b>Example 2:</b><br>
+<b>Input: </b>nums = [1, 2, 3, 4], k=5<br>
+<b>Output: </b> 0 <br>
+<b>Explanation: </b>There does not exist any pair of indices whose corresponding product is divisible by 5<br>
+
+<b>Constraints: </b>
+<ul><li> 1<= nums.length <= 10<sup>5</sup></li>
+  <li> 1 <= nums[i], k <= 10<sup>5</sup></li></ul>
   
+--------------------------------------------------------------------------
