@@ -621,3 +621,85 @@ Other pairs such as (0, 2) and (2, 4) have products 3 and 15 repectively, which 
   <li> 1 <= nums[i], k <= 10<sup>5</sup></li></ul>
   
 --------------------------------------------------------------------------
+
+2150. Find All Lonely Numbers in the Array (Medium) <br><br>
+
+You are given an integer array nums. A number x is <b>lonely</b> when it appears only once, and no <b>adjacent</b> numbers (i.e. x+1 and x-1) appear in the array.
+Return all lonely numbers in nums. You may return the answer in <b>any order</b>.<br>
+
+<b>Example 1:</b><br>
+<b>Input:</b> nums = [10, 6, 5, 8]
+<b>Output:</b> [10, 8]<br>
+<b>Explanation:</b><br>
+- 10 is a lonely number since it appears exactly once and 9 and 11 do not appear in nums.<br>
+- 8 is a lonely number since it appears exactly once and 9 and 7 do not appear in nums.<br>
+- 5 is not a lonely number since 6 appears in nums and vice versa.<br>
+Hence, the lonely numbers in nums are [10, 8]<br>
+
+<b>Example 2:</b><br>
+<b>Input:</b> nums = [1, 3, 5, 3]
+<b>Output:</b> [1, 5]<br>
+<b>Explanation:</b><br>
+- 1 is a lonely number since it appears exactly once and 0 and 2 do not appear in nums.<br>
+- 5 is a lonely number since it appears exactly once and 4 and 6 do not appear in nums.<br>
+- 3 is not a lonely number since it appears twice<br>
+Hence, the lonely numbers in nums are [1, 5]<br>
+
+<b>Constraints</b>
+<ul><li> 1<= nums.length <=10<sup>5</sup></li>
+  <li> 0 <= nums[i] <= 10<sup>6</sup></li></ul>
+  
+------------------------------------------------------------------------
+
+2186. Minimum Number of Steps to Make Two Strings Anagram II (Medium)<br>
+
+You are given two strings s and t. In one step, you can append <b>any character</b> to either s or t.<br>
+
+Return the minimum number of steps to make s and t <b>anagrams</b> of eachother.<br>
+
+An anagram of a string is a string that contains the sma e characters with a different (or the same) ordering. <br>
+
+<b>Example 1:</b><br>
+<b>Input:</b> s= "leetcode", t = "coats"<br>
+<b>Output: 7</b><br>
+<b>Explanation:</b><br>
+- In 2 steps, we can append the letters in "as" onto s = "leetcode", forming s = "leetcodeas".<br>
+- In 5 steps, we can append the letters in "leede" onto t = "coats", forming t = "coatsleede".<br>
+"leetcodeas" and "coatsleede" are now anagrams of eachother.<br>
+we used a total of 2+7 = 7 steps. It can be shown that there is no way to make them anagrams of eachother wih less than 7 steps. <br>
+
+<b>Example 2:</b><br>
+<b>Input:</b> s= "night", t = "thing" <br>
+<b>Output:</b> 0<br>
+<b>Explanation:</b> The given strings are already anagrams of eachother. Thus, we do not need any further steps.
+
+<b>Constraints:</b><br>
+<ul><li> 1 <= s.length, t.length <=2*10<sup>5</sup>
+  <li> s and t consist of lowercase English letters.</li></ul>
+  
+----------------------------------------------------------------------------
+
+2226. Maximum Candies Allocated to K Children (Medium) <br><br>
+
+You are given a <b>0-indexed</b> integer array candies. Each element in the array denotes a pile of candies of size candies[i]. You can divide each pile into any number of <b>sub piles</b>, but you <b>cannot</b> merge two piles together. <br>
+  
+You are also given an integer K. You should allocate piles of candies to k children such that each child gets the <b>same</b> number of candies. Each child can take <b>at most one pile</b> of candies and some piles of candies may go unused. <br>
+
+Return the <b>maximum number of candies</b> each child can get. <br>
+
+<b>Example 1:</b><br>
+<b>Input: </b> candies: [5, 8, 6], k = 3 <br>
+<b>Output:</b> 5 <br>
+<b>Explanation:</b> We can divide candies[1] into 2 piles of size 5 and 3, and candies[2] into 2 piles of size 5 and 1. We now have five piles of candies of sizes 5, 5, 3, 5, and 1. We can allocate the the 3 piles of size 5 to 3 children. It can be proven that each child cannot receive more than 5 candies. <br>
+
+<b>Example 2:</b><br>
+<b>Input: </b> candies: [2, 5], k = 11 <br>
+<b>Output:</b> 0 <br>
+<b>Explanation:</b> There are 11 children but only 7 candies in total, so it is impossible to ensure each child receives at least one candy. Thus, each child gets no candy and the answer is 0. <br>
+
+<b>Constraints: </b><br>
+<ul><li> 1 <= candies.length <= 10<sup>5</sup></li>
+  <li> 1 <= candies[i] <= 10<sup>7</sup></li>
+  <li> 1 <= k <= 10<sup>12</sup></li></ul>
+  
+
