@@ -702,4 +702,109 @@ Return the <b>maximum number of candies</b> each child can get. <br>
   <li> 1 <= candies[i] <= 10<sup>7</sup></li>
   <li> 1 <= k <= 10<sup>12</sup></li></ul>
   
+-----------------------------------------------------------------
+
+1910. Remove All occurrences of a Substring (Medium) <br><br>
+
+Given two strings s and part, perform the following operation on s until all occurrences of the substring part are removed:
+<ul><li> Find the <b>leftmost</b> occurrence of the substring part and <b>remove</b> it from s.</li></ul> <br>
+
+Return s after removing all occurrences of part <br>
+
+A <b>substring</b> is a contiguous sequence of characters in a string<br>
+
+<b>Example 1:</b> <br>
+<b>Input:</b> s = "daabcbaabcbc", part = "abc" <br>
+<b>Output:</b> "dab" <br>
+<b>Explanation:</b> The following operations are done:<br>
+- s = "da<b>abc</b>bccbcbc", remove "abc" starting at index 2, so s = "dabaabcbc".<br>
+- s = "daba<b>abc</b>bc", remove "abc" starting at index 4, so s = "dababc"<br>
+- s = "daba<b>abc</b>", remove "abc" starting at index 3, so s = "dab"<br>
+Now s has no occurrences of "abc"<br>
+
+<b>Example 2:</b> <br>
+<b>Input:</b> s = "axxxxyyyyb", part = "xy" <br>
+<b>Output:</b> "ab" <br>
+<b>Explanation:</b> The following operations are done:<br>
+- s = "axxx<b>xy</b>yyyb", remove "xy" starting at index 4, so s = "axxxyyyb".<br>
+- s = "axx<b>xy</b>yyb", remove "xy" starting at index 3, so s = "axxyyb"<br>
+- s = "ax<b>xy</b>yb", remove "xy" starting at index 2, so s = "axyb"<br>
+- s = "a<b>xy</b>b", remove "xy" starting at index 1, so s = "ab"<br>
+Now s has no occurrences of "ab"<br>
+
+<b>Constraints:</b>
+<ul><li> 1<= s.length <= 1000  </li>
+  <li>1 <= part.length <= 1000 </li>
+  <li> s and part consists of lowercase English letters.</li>
+</ul>
+
+-----------------------------------------------------------------
+
+2058. Find the Minimum and Maximum Number of Nodes Between Critical Points (Medium)
+
+A <b>critical point</b> in a linked list is defined as <b>either</b> a <b>local maxima</b> or a <b>local minima.</b>
+A node is a <b>local maxima</b> if the current node has a value <b>strictly greater</b> than the previous node and the next node.
+
+A node is a <b>local minima</b> if the current node has a value <b>strictly smaller</b> than the previous node and the next node.
+
+Note that a node can only be a local maxima/minima if there exists <b>both</b> a previous node and a next node.
+
+Given a linkedlist head, return an array of length 2 containing [minDistance, maxDistance] where minDistance is the <b>minimum distance</b> between <b>any two distinct</b> critical points and maxDistance is the <b>maximum distance</b> between <b>any two distinct</b> critical points. If there are fewer than two critical points, return [-1, -1].
+
+<b>Example 1:</b> <br>
+<b>Input:</b> head = [3, 1] <br>
+<b>Output:</b> [-1, -1] <br>
+<b>Explanation:</b> There are no critical points in [3, 1]<br><br>
+
+<b>Example 2:</b> <br>
+<b>Input:</b> head = [5, 3, 1, 2, 5, 1, 2] <br>
+<b>Output:</b> [1, 3] <br>
+<b>Explanation:</b> There are three critical points:<br>
+-[5, 3, <b>1</b>, 2, 5, 1, 2]: The third node is a local minima because 1 is less than 3 and 2<br>
+-[5, 3, 1, 2, <b>5</b>, 1, 2]: The fifth node is a local maxima because 5 is greater than 2 and 1<br>
+-[5, 3, 1, 2, 5, <b>1</b>, 2]: The sixth node is a local minima because 1 is less than 5 and 2<br>
+The minimum distance is between the fifth and sixth node. minDistance = 6 - 5 = 1<br>
+The maximum distance is between the third and sixth node. maxDistance = 6 - 3 = 3<br>
+
+<b>Example 3:</b> <br>
+<b>Input:</b> head = [1, 3, 2, 2, 3, 2, 2, 2, 7] <br>
+<b>Output:</b> [3, 3] <br>
+<b>Explanation:</b> There are two critical points:<br>
+-[1, <b>3</b>, 2, 2, 3, 2, 2, 2, 7]: The second node is a local maxima because 3 is greater than 1 and 2<br>
+-[1, 3, 2, 2, <b>3</b>, 2, 2, 2, 7]: The fifth node is a local maxima because 3 is greater than 2 and 2<br>
+Both the minimum and maximum distances are between the second and the fifth node. Thus, minDistance and maxDistance is 5 - 2 = 3
+Note that the last node is not considered a local maxima because it does not have a next node.<br>
+
+<b>Constraints:</b>
+<ul><li> The number of nodes in the list is in the range [2, 10<sup>5</sup>]</li>
+  <li> 1 <= Node.val <= 10<sup>5</sup></li></ul>
+  
+-----------------------------------------------------------------------
+  
+2064. Minimized Maximum of Products Distributed to Any Store (Medium)
+
+You are given an integer n indicating there are n specialty retail stores. There are m product types of varying amounts which are given as a 0-indexed integer array quantities, where quantities[i] represents the number of products of the i<sup>th</sup> product type. You need to distribute all products to the retail stores following these rules:
+
+<ul><li>A store can only be given at most one product type but can be given any amount of it.</li>
+  <li> After distribution, each store will have been given some number of products (possibly 0). Let x represent the maximum number of products given to any store. You want x to be as small as possible. i.e., you want to <b>minimize</b> the <b>maximum</b> number of products that are given to any store.</li></ul>
+    
+Return the minimum possible x.
+
+<b>Example 1:</b> <br>
+<b>Input:</b> n = 6, quantities = [11, 6] <br>
+<b>Output:</b> 3 <br>
+<b>Explanation:</b> one optimal way is:
+- The 11 products of type 0 are distributed to the first four stores in these amounts: 2, 3, 3, 3
+- The 6 products of type 1 are distributed to the other two stores in these amounts: 3, 3
+The maximum number of products given to any store is max(2, 3, 3, 3, 3, 3) = 3
+
+<b>Example 2:</b> <br>
+<b>Input:</b> n = 7, quantities = [15, 10, 10] <br>
+<b>Output:</b> 3 <br>
+<b>Explanation:</b> one optimal way is:
+- The 11 products of type 0 are distributed to the first four stores in these amounts: 2, 3, 3, 3
+- The 6 products of type 1 are distributed to the other two stores in these amounts: 3, 3
+The maximum number of products given to any store is max(2, 3, 3, 3, 3, 3) = 3
+
+
 
