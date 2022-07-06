@@ -788,23 +788,38 @@ You are given an integer n indicating there are n specialty retail stores. There
 <ul><li>A store can only be given at most one product type but can be given any amount of it.</li>
   <li> After distribution, each store will have been given some number of products (possibly 0). Let x represent the maximum number of products given to any store. You want x to be as small as possible. i.e., you want to <b>minimize</b> the <b>maximum</b> number of products that are given to any store.</li></ul>
     
-Return the minimum possible x.
+Return the minimum possible x.<br>
 
 <b>Example 1:</b> <br>
 <b>Input:</b> n = 6, quantities = [11, 6] <br>
 <b>Output:</b> 3 <br>
 <b>Explanation:</b> one optimal way is:
 - The 11 products of type 0 are distributed to the first four stores in these amounts: 2, 3, 3, 3
-- The 6 products of type 1 are distributed to the other two stores in these amounts: 3, 3
-The maximum number of products given to any store is max(2, 3, 3, 3, 3, 3) = 3
+- The 6 products of type 1 are distributed to the other two stores in these amounts: 3, 3 <br>
+The maximum number of products given to any store is max(2, 3, 3, 3, 3, 3) = 3 <br>
 
 <b>Example 2:</b> <br>
 <b>Input:</b> n = 7, quantities = [15, 10, 10] <br>
-<b>Output:</b> 3 <br>
+<b>Output:</b> 5 <br>
 <b>Explanation:</b> one optimal way is:
-- The 11 products of type 0 are distributed to the first four stores in these amounts: 2, 3, 3, 3
-- The 6 products of type 1 are distributed to the other two stores in these amounts: 3, 3
-The maximum number of products given to any store is max(2, 3, 3, 3, 3, 3) = 3
+- The 15 products of type 0 are distributed to the first three stores in these amounts: 5, 5, 5
+- The 10 products of type 1 are distributed to the other two stores in these amounts: 5, 5
+- The 10 products of type 2 are distributed to the last two stores in these amounts: 5, 5 <br>
+The maximum number of products given to any store is max(5, 5, 5, 5, 5, 5, 5) = 5 <br>
 
+<b>Example 3:</b> <br>
+<b>Input:</b> n = 1, quantities = [10000] <br>
+<b>Output:</b> 10000 <br>
+<b>Explanation:</b> the only one optimal way is:
+- The 10000 products of type 0 are distributed to the only store. <br>
+The maximum number of products given to any store is max(10000) = 10000<br><br>
+
+
+<b>Constraints</b>
+<ul><li> m ==quantities.length</li></ul>
+<li> 1 <=m <= n <= 10 <sup>5</sup></li>
+<li>1 <= quantities[i] <= 10<sup>5</sup></li></ul>
+
+------------------------------------------------------------------
 
 
