@@ -816,10 +816,208 @@ The maximum number of products given to any store is max(10000) = 10000<br><br>
 
 
 <b>Constraints</b>
-<ul><li> m ==quantities.length</li></ul>
+<ul><li> m ==quantities.length</li>
 <li> 1 <=m <= n <= 10 <sup>5</sup></li>
 <li>1 <= quantities[i] <= 10<sup>5</sup></li></ul>
 
 ------------------------------------------------------------------
 
+1936. Add Minimum number of Rungs (Medium) <br><br>
 
+You are given a <b>strictly increasing</b> integer array rungs that represents the <b>height</b> of rungs on a ladder. You are currently on the <b>floor</b> at height 0, and you want to reach the last rung. <br>
+
+You are also given an integer dist. You can only climb to the next highest rung if the distance between where you are currently at (the floor or on the rung) and the next rubg is <b>at most</b> dist. You are able to insert rungs at any positive <b>integer</b> height if a rund is not already there.<br>
+
+Return the <b>minimum</b> number of rungs that must be added to the ladder in order for you to climb to the last rung. <br>
+
+<b>Example 1:</b> <br>
+<b>Input:</b> rungs = [1, 3, 5, 10], dist = 2 <br>
+<b>Output:</b> 2 <br>
+<b>Explanation:</b> You currently cannot reach the last rung. Add rungs at heights 7 and 8 to climb this ladder. The ladder will now have rungs at heights 7 and 8 to climb this ladder. The ladder will now have rungs at [1, 3, 5, 7, 8, 10]. <br>
+
+<b>Example 2:</b> <br>
+<b>Input:</b> rungs = [3, 6, 8, 10], dist = 3 <br>
+<b>Output:</b> 0 <br>
+<b>Explanation:</b> The ladder can be climbed without adding any additional rungs. <br>
+
+<b>Example 3:</b> <br>
+<b>Input:</b> rungs = [3, 4, 6, 7], dist = 2 <br>
+<b>Output:</b> 1 <br>
+<b>Explanation:</b> You currently cannot reach the first rung from the ground. Add a rung at height 1 to climb this ladder. The ladder will now have rungs at [1, 3, 4, 6, 7] <br>
+
+<b>Constraints:</b>
+<ul><li>1 <= rungs.length <= 10<sup>5</sup></li>
+  <li>1 <= rungs[i] <= 10<sup>9</sup></li>
+  <li> 1<= dist <= 10<sup>9</sup></li>
+  <li> rungs is <b>strictly increasing</b></li></ul>
+
+--------------------------------------------------
+
+1921. Eliminate Maximum Number of Monsters (Medium) <br><br>
+
+You are playing a video game where you are defending your city from a group of n monsters. You are given a <b>0-indexed</b> integer array dist of size n, where dist[i] is the <b>initial distance</b> in kilometers of the i<sup>th</sup> monster from the city. <br>
+
+The monsters walk towards the city at a <b>constant</b> speed. The speed of each monster is given to you in an integer array <b>speed</b> of size n, where speed[i] is the speed of the i<sup>th</sup> monster in kilometers per minute.<br>
+
+You have a weapon that, once fully charged, can eliminate a <b>single</b> monster. However, the weapn takes <b>one minute</b> to charge. The weapon is fully charged at the very start.<br>
+
+You lose when any monster reaches your city. If a monster reachers the city at the exact moment the weapon is fully charged, it counts as a <b>loss</b> and the game ends before you can use your weapon.<br>
+
+Return the <b>maximum</b> number of monsters that you can eliminate before you lose, or n, if you can eliminate all the monsters before they reach the city. <br>
+
+<b>Example 1:</b> <br>
+<b>Input:</b> dist = [1, 3, 4], speed = [1, 1, 1] <br>
+<b>Output:</b> 3 <br>
+<b>Explanation:</b> In the beginning, the distance of the monsters is [1, 3, 4]. You eliminate the first monster. <br>
+After a minute, the distances of the monsters are [X, 2, 3]. You elinimate the second monster.<br>
+After a minute, the distance of the monsters are [X, X, 2]. You eliminate the third monster. All 3 monsters can be eliminated.<br>
+
+
+<b>Example 2:</b> <br>
+<b>Input:</b> dist = [1, 1, 2, 3], speed = [1, 1, 1, 1] <br>
+<b>Output:</b> 1 <br>
+<b>Explanation:</b> In the beginning, the distance of the monsters is [1, 1, 2, 3]. You eliminate the first monster. <br>
+After a minute, the distances of the monsters are [X, 0, 1, 2], so you lose<br>
+You can only eliminate 1 monster<br>
+
+<b>Example 3:</b> <br>
+<b>Input:</b> dist = [3, 2, 4], speed = [5, 3, 2] <br>
+<b>Output:</b> 1 <br>
+<b>Explanation:</b> In the beginning, the distance of the monsters is [3, 2 ,4]. You eliminate the first monster. <br>
+After a minute, the distances of the monsters are [X, 0, 2], so you lose<br>
+You can only eliminate 1 monster<br>
+
+<b>Constraints: </b><br>
+<ul><li> n == dist.length == speed.length</li>
+  <li> 1 <= n <= 10 <sup>5</sup></li>
+  <li> 1 <= dist[i], speed[i] <=10<sup>5</sup></li></ul>
+  
+------------------------------------------------------------------ 
+
+2249. Count Lattice Points inside a Circle (Medium)
+
+Given a 2D integer array circles where circles[i] = [x<sub>i</sub>, y<sub>i</sub>, r<sub>i</sub>] represents the center (x<sub>i</sub>, y<sub>i</sub>) and radius r<sub>i</sub> of the i<sup>th</sup> circle drawn on a grid, return the <b>number of lattice points</b> that are present inside <b>at least one circle</b>
+
+Note:
+<ul><li>A <b>lattice point</b> is a point with integer coordinates</li>
+  <li> Points that lie <b>on the circumference of a circle</b> are also considered to be inside it</li>
+  </ul>
+  
+<b>Example 1:</b> <br>
+<b>Input:</b> circles = [[2, 2, 1]] <br>
+<b>Output:</b> 5 <br>
+<b>Explanation:</b> The lattice points present inside the circle are (1, 2), (2, 1), (2, 2), (2, 3) and (3, 2). 
+Other points such as (1, 1) and (1, 3) are not considered inside the circle. Hence, the number of lattice points present inside at least one circle is 5 <br>
+
+<b>Example 2:</b> <br>
+<b>Input:</b> circles = [[2, 2, 2], [3, 4, 1]] <br>
+<b>Output:</b> 16 <br>
+<b>Explanation:</b> There are 16 lattice points present inside at least one circle. Some of them are (0, 2), (2, 0), (2, 4), (3, 2) and (4, 4). <br>
+
+<b>Constraints: </b><br>
+<ul><li> 1 <= circles.length <= 200 </li>
+  <li> circles[i].length == 3 </li>
+  <li> 1 <= r<sub>i</sub> <= min(x<sub>i</sub>, y<sub>i</sub>) </li></ul>
+
+------------------------------------------------------------------
+
+2075. Decode the slanted Ciphertext (Medium)
+
+A string originalText is encoded using a <b>slanted transposition cipher</b> to a string encodedText with the hep of a matrix having a <b>fixed number of rows</b> rows
+ 
+originalText is placed first in a top-left to bottom-right manner. 
+
+The bluecells are filled first, followed by the red cells, then the yellow cells, and so on, until we reached the end of originalText. The arrow indicates the order in which the cells are filled. All empty cells are filled with ' '. The number of columns is chosen such that the rightmost column will not be empty after filling in originalText. 
+
+encodedText is then formed by appending all characters of the matrix in row-wise fashion. 
+The characters in the blue cells are appended first to encodedText, then the red cells, and so on, and finnaly yellow cells. The arrow indicates the order in which the cells are accessed. 
+
+For example, if originalText = "cipher" and rows = 3, then the encodedText = "ch   ie   pr"
+
+Given the encoded string encodedText and number of rows rows, return the original string originalText.
+
+Note: originalText <b>does not</b> have any trailing spaces ' ' . The test cases are generated such that there is only one possible originalText
+
+<b>Example 1:</b> <br>
+<b>Input:</b> encodedText = "ch   ie   pr", rows =3 <br>
+<b>Output:</b> "cipher" <br>
+
+
+<b>Example 2:</b> <br>
+<b>Input:</b> encodedText = "iveo    eed   l te   olc", rows =4 <br>
+<b>Output:</b> "i love leetcode" <br>
+
+
+<b>Example 3:</b> <br>
+<b>Input:</b> encodedText = "coding", rows =1 <br>
+<b>Output:</b> "coding" <br>
+
+<b>Constraints: </b><br>
+<ul><li> 0 <= encodedText.length <= 10<sup>6</sup> </li>
+  <li> encodedText consists of lowercase English letters and ' ' only.</li>
+  <li>encodedText is a valid encoding of some originalText that <b>does not</b> have trailing spaces.</li>
+  <li> 1 <= rows <= 1000</li>
+  <li> The testcases are generated such that there is <b>only one possible originalText </li></ul>
+
+--------------------------------------------------------------------
+
+1877. Minimize Maximum Pair Sum in Array (Medium) <br>
+
+The <b>pair sum</b> of a pair (a, b) is equal to a+b. The maximum pair sum is the largest pair sum in a list of pairs. <br>
+
+For example, if we have pairs (1, 5), (2, 3) and (4, 4), the maximum pair sum would be max(1+5, 2+3, 4+4) = max (6, 5, 8) = 8 <br>
+
+Given an array nums of even length n, pair up the elements of nums into n/2 pairs such that
+<ul><li>Each element of nums is in <b>exactly one</b> pair</li>
+  <li> The <b>maximum pair sum</b> is <b>minimized</b></li></ul><br><br>
+  
+Return the minimized <b>maximum pair sum</b> after optimally pairing up the elements.
+
+<b>Example 1:</b> <br>
+<b>Input:</b> nums = [3, 5, 2, 3] <br>
+<b>Output:</b> 7 <br>
+<b>Explanation:</b> The elements can be paired up into pairs (3, 3) and (5, 2). The maximum pair sum is max(3+3, 5+2) = max(6, 7) = 7.<br>
+
+
+<b>Example 2:</b> <br>
+<b>Input:</b> nums = [3, 5, 4, 2, 4, 6] <br>
+<b>Output:</b> 8 <br>
+<b>Explanation:</b> The elements can be paired up into pairs (3, 5), (4, 4) and (6, 2). The maximum pair sum is max(3+5, 4+4, 6+2) = max(8, 8, 8) = 8.<br>
+
+
+<b>Constraints: </b><br>
+<ul><li> n == nums.length </li>
+  <li> 2 <= n <= 10<sup>5</sup></li>
+  <li><b>n</b> is even</li>
+  <li> 1 <= nums[i] <= 10<sup>5</sup></li></ul>
+  
+----------------------------------------------------------------------------
+
+1881. Maximum Value after Insertion (Medium)
+
+You are given a very large integer n, represented as a string, and an integer digit x. The digits in n and the digit x are in the <b>inclusive</b> range [1, 9], and n may represent a <b>negative</b> number.
+You want to <b>maximize</b> n's numerical value by inserting x anywhere in the decimal represnetaton of n. You cannot insert x to the left of the negative sign. 
+
+<ul><li> For example, if n= 73 and x = 6, it would be best to insert it between 7 and 3, making n = 763 </li>
+  <li>if n = -55 and x=2 , it would be best to insert it before the first 5, making n=-255</li></ul>
+  
+Return a string representing the maximum value of n after the insertion:
+
+<b>Example 1:</b> <br>
+<b>Input:</b> n = "99", x = 9 <br>
+<b>Output:</b> "999" <br>
+<b>Explanation:</b> The result is the same regardless of where you insert 9.<br>
+
+<b>Example 2:</b> <br>
+<b>Input:</b> n = "-13", x = 2 <br>
+<b>Output:</b> "-123" <br>
+<b>Explanation:</b> you can make n one of {-213, -123, -132} and the largest of those three is -123.<br>
+
+<b>Constraints: </b><br>
+<ul><li> 1 <= n.length <= 10<sup>5</sup> </li>
+  <li> 1 <= x <= 9</li>
+  <li>The digits in n are in the range [1, 9]</li>
+  <li> n is a valid representation of an integer.</li>
+  <li> in the case of a negative n, it will begin with '-' </li></ul>
+
+--------------------------------------------------------------------------------------
