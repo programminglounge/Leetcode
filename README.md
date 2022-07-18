@@ -1021,3 +1021,139 @@ Return a string representing the maximum value of n after the insertion:
   <li> in the case of a negative n, it will begin with '-' </li></ul>
 
 --------------------------------------------------------------------------------------
+
+2322. The Latest Time to Catch a Bus (Medium) <br><br>
+
+You are given a <b>0-indexed</b> integer array buses of length n, where buses[i] represents the departure time of the i<sup>th</sup> bus. You are also given a <b>0-indexed</b> integer array passengers of length m, where passengers[j] represents the arrival time of the j<sup>th</sup> passenger. All bus departure times are unique. All passenger arrival times are unique. <br>
+
+Ypu are given an integer capacity, which represents the <b>maximum</b> number of passengers that can get on each bus. <br>
+
+The passengers will get on the next available bus. You can get on a bus that will depart at x minutes if you arrive at y minues, where y<=x, and the bus is not full. Passengers with the <b>earliest arrival times get on the bus first. <br>
+
+Return the latest time you may arrive at the bus station to catch a bus. You <b>cannot</b> arrive at the same time as another passenger.<br>
+
+<b>Note:</b> The arrays buses and passengers are not necessarily sorted.<br>
+
+<b>Example 1:</b> <br>
+<b>Input:</b> buses = [10, 20], passengers = [2, 17, 18, 19], capacity = 2 <br>
+<b>Output:</b> 16 <br>
+<b>Explanation:</b> The 1<sup>st</sup> bus departs with the 1<sup>st</sup> passenger. <br>
+The 2<sup>nd</sup> bus departs with you and the 2<sup>nd</sup> passenger. <br>
+
+
+<b>Example 2:</b> <br>
+<b>Input:</b> buses = [20, 30, 10], passengers = [19, 13, 26, 4, 25, 11, 21], capacity = 2 <br>
+<b>Output:</b> 20 <br>
+<b>Explanation:</b> The 1<sup>st</sup> bus departs with the 4<sup>th</sup> passenger. <br>
+The 2<sup>nd</sup> bus departs with the 6<sup>th</sup> and 2<sup>nd</sup> passengers. <br>
+The 3<sup>rd</sup> bus departs with the 1<sup>st</sup> passenger and you. <br>
+
+<b>Constraints:</b><br>
+<ul><li>n == buses.length </li>
+<li>m == passengers.length </li>
+<li>1 <= n, m, capacity <= 10<sup>5</sup></li>
+<li> 2 <= buses[i], passengers[i] <= 10 <sup>9</sup></li>
+<li> Each element in buses is <b>unique</b>.</li>
+<li> Each element in passengers is <b>unique</b>.</li></ul>
+
+-------------------------------------------------------------------------------------------
+
+2320. Count Number of Ways to Place Houses (Medium) <br><br>
+
+There is a street with n*2 <b>plots</b> where there are n plots on each side of the street. The plots on each side are numbered from 1 to n. On each plot, a house can be placed. <br>
+
+Return the number of ways houses can be placed such that no two houses are adjacent to eachother, on the same side of the street. Since the answer may be very large, return it <b>modulo</b> 10<sup>9</sup>+7. <br>
+
+Note that if a house is placed on the i<sup>th</sup> plot on one side of the street, a house can also be placed on the i<sup>th</sup> plot on the other side of the street.<br>
+
+<b>Example 1:</b> <br>
+<b>Input:</b> n = 1 <br>
+<b>Output:</b> 4 <br>
+<b>Explanation:</b><br>
+Possible arrangements:<br>
+1. All plots are empty<br>
+2. A house is placed on one side of the street.<br> 
+3. A house is placed on the other side of the street.<br>
+4. Two houses are placed, one on each side of the street. <br>
+
+<b>Example 2:</b> <br>
+<b>Input:</b> n = 2 <br>
+<b>Output:</b> 9 <br>
+<b>Explanation:</b> The 9 possible arrangements are shown in the diagram above<br>
+
+<b>Constraints:</b>
+
+<ul><li> 1<= n<= 10<sup>4</sup></li></ul>
+
+-------------------------------------------------------------------------------------------------
+
+2300. Successful Pairs of Spells and Potions (Medium) <br><br>
+
+You are given two positive integer arrays spells and potions of length n and m respectively, where spells[i] represents the strength of the i<sup>th</sup> spell and potions[j] represents the strength of the j<sup>th</sup> potion. <br>
+
+You are also given an integer success. A spell and potion pair is considered <b>successful</b> if the <b>product</b> of their strengths is at least success. <br>
+
+Return an integer array pairs of length n where pairs[i] is the number of <b>potions</b> that will form a successful pair with the i<sup>th</sup> spell. <br>
+
+<b>Example 1:</b><br> 
+<b>Input:</b> spells = [5, 1, 3], potions = [1, 2, 3, 4, 5], success = 7<br>
+<b>Output:</b> [4, 0, 3] <br>
+<b>Explanation:</b> 0<sup>th</sup> spell: 5 * [1, 2, 3, 4, 5] = [5, <b>10</b>, <b>15</b>, <b>20</b>, <b>25</b>]. 4 pairs are successful. <br>
+1<sup>st</sup> spell: 1 * [1, 2, 3, 4, 5] = [1, 2, 3, 4, 5]. 0 pairs are successful. <br>
+2<sup>nd</sup> spell: 3 * [1, 2, 3, 4, 5] = [3, 6, <b>9</b>, <b>12</b>, <b>15</b>]. 3 pairs are successful. <br>
+Thus [4, 0, 3] is returned.<br>
+
+<b>Example 2:</b><br>
+<b>Input:</b> spells = [3, 1, 2], potions = [8, 5, 8], success = 16 <br>
+<b>Output:</b> [2, 0, 2] <br>
+Explanation: 0<sup>th</sup> spell: 3 * [8, 5, 8] = [<b>24</b>, 15, <b>24</b>]. 2 pairs are successful. <br>
+1<sup>st</sup> spell: 1 * [8, 5, 8] = [8, 5, 8]. 0 pairs are successful. <br>
+2<sup>nd</sup> spell: 2 * [8, 5, 8] = [<br>16</br>, 10, <br>16</br>]. 2 pairs are successful. <br>
+Thus [2, 0, 2] is returned. <br>
+
+<b>Constraints:</b>
+
+<ul><li>n == spells.length </li>
+<li>m == potions.length </li>
+<li>1 <= n, m <= 10<sup>5</sup> </li>
+<li>1 <= spells[i], potions[i] <= 10<sup>5</sup> </li>
+<li>1 <= success <= 10<sup>10</sup> </li></ul>
+
+-------------------------------------------------------------------------------
+
+2333. Minimum Sum of Squared Difference (Medium) <br><br>
+
+You are given two positive <b>0-indexed</b> integer arrays nums1 and nums2, both of length n.
+
+The <b>sum of squared difference</b> of arrays nums1 and nums2 is defined as the <b>sum</b> of (nums1[i]-nums2[i])<sup>2</sup> for each 0 <= i < n. 
+
+You are also given two positive integers k1 and k2. You can modify any of the elements of nums1 by +1 or -1 at most k1 times. similarly, you can modify any of the elements of nums2 by +1 or -1 at most k2 times. 
+
+Return the minimum <b>sum of squared difference</b> after modifying array nums1 at most k1 times and modifying array nums2 at most k2 times.
+
+<b>Note:</b> You are allowed to modify the array elements to become <b>negative</b> integers.
+
+<b>Example 1:</b><br>
+<b>Input:</b> nums1 = [1, 2, 3, 4], nums2 = [2, 10, 20, 19], k1 = 0, k2 = 0 <br>
+<b>Output:</b> 579 <br>
+<b>Explanation:</b> The elements in nums1 and nums2 cannot be modified because k1= 0 and k2 = 0 <br>
+The sum of square difference will be (1 - 2)<sup>2</sup>+(2 - 10)<sup>2</sup>+(3 - 20)<sup>2</sup>+(4 - 19)<sup>2</sup> = 579<br>
+
+<b>Example 2:</b><br>
+<b>Input:</b> nums1 = [1, 4, 10, 12], nums2 = [5, 8, 6, 9], k1 = 1, k2 = 1 <br>
+<b>Output:</b> 43 <br>
+<b>Explanation:</b> One way to obtain the minimum sum of square difference is:<br>
+-Increase nums1[0] once.<br>
+-Increase nums2[2] once.<br>
+The minimum of the sum of square difference will be (2 - 5)<sup>2</sup>+(4 - 8)<sup>2</sup>+(10 - 7)<sup>2</sup>+(12 - 9)<sup>2</sup> = 43<br>
+Note that, there are other ways to obtain the minimum of the sum of square difference, but there is no way to obtain a sum smaller than 43.<br>
+
+<b>Constraints:</b><br>
+<ul><li> n == nums1.length == nums2.length</li>
+<li> 1 <= n <= 10<sup>5</sup></li>
+<li> 0 <= nums1[i], nums2[i] <= 10<sup>5</sup> </li>
+<li> 0 <= k1, k2 <= 10<sup>9</sup> </li></ul>
+
+----------------------------------------------------------------
+
+
