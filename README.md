@@ -5,7 +5,7 @@ In this repository I solve some of the medium and hard problems on Leetcode
 29. Problem 1
 50. Pow(x, n) 
 
-
+--------------------------------------
 
 7. Reverse Integer (Medium)  <br>
 
