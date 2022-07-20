@@ -7,6 +7,74 @@ In this repository I solve some of the medium and hard problems on Leetcode
 
 <a href = #problem50> 50. Pow(x, n) </a> 
 
+<a href = #problem172> 172. Factorial Trailing Zeroes (Medium, TrailingZeros.cs) </a>
+
+<a href = #problem189> 189. Rotate Array (Medium) </a>
+
+<a href = #problem198> 198. House Robber (Medium) </a>
+
+<a href = #problem315> 315. Count of Smaller Numbers After Self (Hard) </a>
+
+<a href = #problem857> 857. Minimum Cost to Hire K Workers (Hard) </a> 
+
+<a href = #problem907> 907. Sum of Subarray Minimums (Medium) </a>
+
+<a href = #problem1488> 1488. Avoid Flood in The City (Medium) </a>
+
+<a href = #problem1877> 1877. Minimize Maximum Pair Sum in Array (Medium) </a>
+
+<a href = #problem1881> 1881. Maximum Value after Insertion (Medium) </a>
+
+<a href = #problem1910> 1910. Remove All occurrences of a Substring (Medium) </a>
+
+<a href = #problem1921> 1921. Eliminate Maximum Number of Monsters (Medium) </a>
+
+1936. Add Minimum number of Rungs (Medium)
+
+1980. Find Unique Binary String (Medium)
+
+2007. Find Original Array from Doubled Array (Medium)
+
+2058. Find the Minimum and Maximum Number of Nodes Between Critical Points (Medium)
+
+2063. Vowels of All Substrings (Medium)
+
+2064. Minimized Maximum of Products Distributed to Any Store (Medium)
+
+2075. Decode the slanted Ciphertext (Medium)
+
+2139. Minimum Moves to Reach Target Score (Medium)
+
+2150. Find All Lonely Numbers in the Array (Medium)
+
+2183. Count Array Pairs Divisble by K (Hard)
+
+2186. Minimum Number of Steps to Make Two Strings Anagram II (Medium)
+
+2191. Sort the Jumbled Numbers (Medium)
+
+2225. Find players with zero or one losses (Medium)
+
+2226. Maximum Candies Allocated to K Children (Medium)
+
+2233. Maximum Product After K Increments (Medium)
+
+2240. Number of Ways to Buy Pens and Pencils (Medium)
+
+2244. Minimum Rounds to Complete All tasks
+
+2249. Count Lattice Points inside a Circle (Medium)
+
+2289. Steps to Make Array Non-decreasing (Medium)
+
+2300. Successful Pairs of Spells and Potions (Medium)
+
+2320. Count Number of Ways to Place Houses (Medium)
+
+2322. The Latest Time to Catch a Bus (Medium)
+
+2333. Minimum Sum of Squared Difference (Medium)
+
 --------------------------------------
 
 <a id = "problem7">7. Reverse Integer (Medium)  <br></a>
@@ -146,33 +214,6 @@ rotate 2 steps to the right: [3, 99, -1, -100] <br>
   
 -------------------------------------------------------------------
 
-189. Rotate Array (Medium) <br>
-
-Given an array, rotate the array to the right by k steps, where k is non-negative.<br>
-
-<b>Example 1:</b><br>
-<b>Input:</b> nums = [1, 2, 3, 4, 5, 6, 7], k=3 <br>
-<b>Output :</b> [5, 6, 7, 1, 2, 3, 4]<br>
-<b>Explanation:</b><br>
-rotate 1 step to the right: [7, 1, 2, 3, 4, 5, 6] <br>
-rotate 2 steps to the right: [6, 7, 1, 2, 3, 4, 5] <br>
-rotate 3 steps to the right: [5, 6, 7, 1, 2, 3, 4] <br>
-
-<b>Example 2:</b><br>
-<b>Input:</b> nums = [-1, -100, 3, 99], k=2 <br><br>
-<b>Output :</b> [3, 99, -1, -100]<br><br>
-<b>Explanation:</b><br>
-rotate 1 step to the right: [99, -1, -100, 3] <br>
-rotate 2 steps to the right: [3, 99, -1, -100] <br>
-
-<b>Constraints:</b>
-<ul><li> 1<= nums.length <= 10<sup>5</sup></li>
-  <li>-2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> -1</li>
-  <li> 0 <= k <= 10<sup>5</sup></li>
-  </ul>
-  
--------------------------------------------------------------------
-
 198. House Robber (Medium) <br>
 
 You are a professional robber pkanning to rob houses along a street. Each house has a certain amount of money stashed,
@@ -202,7 +243,7 @@ Constraints:
 
 ---------------------------------------------------
 
-315. Count of Smaller Numbers After Self (Hard) <br>
+315. Count of Smaller Numbers After Self (Hard) <br><br>
 You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
 
 Example 1: <br>
@@ -262,11 +303,11 @@ Constraints:
 
 --------------------------------------------------------------------
 
-907. Sum of Subarray Minimums (Medium) 
+907. Sum of Subarray Minimums (Medium) <br><br>
 Given an array of integers arr, find the sum of min(b), where b ranges over every (contiguous) subarray of arr.
 Since the answer may be large, return the answer modulo 10<sup>9</sup>+7 <br>
 
-Example 1: <br>
+<b>Example 1:</b> <br>
 <b>Input</b>: arr = [3, 1, 2, 4] <br>
 <b>Output</b>: 17 <br>
 <b>Explanation</b>: <br>
@@ -274,7 +315,7 @@ Subarrays are [3], [1], [2], [4], [3, 1], [1, 2], [2, 4], [3, 1, 2], [1, 2, 4], 
 Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1 <br>
 Sum is 17 <br>
 
-Example 2: <br>
+<b>Example 2:</b> <br>
 <b>Input</b>: arr = [11, 81, 94, 43, 3] <br>
 <b>Output</b>: 444 <br>
 
@@ -595,7 +636,8 @@ Note that the last node is not considered a local maxima because it does not hav
   
 -----------------------------------------------------------------------
 
-2063. Vowels of All Substrings (Medium) <br>
+2063. Vowels of All Substrings (Medium) <br><br>
+
 Given a string word, return the sum of the number of vowels ('a', 'e', 'i', 'o' and 'u') in every substring of word
 A substring is a contiguous (non-empty) sequence of characters within a string. <br>
 
@@ -671,7 +713,7 @@ The maximum number of products given to any store is max(10000) = 10000<br><br>
 
 ------------------------------------------------------------------
 
-2075. Decode the slanted Ciphertext (Medium) <br<
+2075. Decode the slanted Ciphertext (Medium) <br><br>
 
 A string originalText is encoded using a <b>slanted transposition cipher</b> to a string encodedText with the hep of a matrix having a <b>fixed number of rows</b> rows <br>
  
@@ -955,7 +997,7 @@ It can be shown that 216 is maximum product
 
 -------------------------------------------------------------------------------------------
 
-2240. Number of Ways to Buy Pens and Pencils (Medium) <br>
+2240. Number of Ways to Buy Pens and Pencils (Medium) <br><br>
 
 You are given an integer total indicating the total amount of money you have. You are also given two integers cost1 and cost2 indicating the price of a pen and pencil respectively. You can spend part or all of your money to buy multiple quantities (or none) of each kind of writing utensil.<br>
   
@@ -1007,7 +1049,7 @@ Constraints:
   
 ------------------------------------------------------------------------------------
 
-2249. Count Lattice Points inside a Circle (Medium)
+2249. Count Lattice Points inside a Circle (Medium) <br><br>
 
 Given a 2D integer array circles where circles[i] = [x<sub>i</sub>, y<sub>i</sub>, r<sub>i</sub>] represents the center (x<sub>i</sub>, y<sub>i</sub>) and radius r<sub>i</sub> of the i<sup>th</sup> circle drawn on a grid, return the <b>number of lattice points</b> that are present inside <b>at least one circle</b>
 
