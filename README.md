@@ -1,13 +1,15 @@
 # Leetcode
 In this repository I solve some of the medium and hard problems on Leetcode 
 
-7. Reverse Integer (Medium)
-29. Problem 1
-50. Pow(x, n) 
+<a href = #problem7>7. Reverse Integer (Medium)</a>
+
+<a href = #problem29>29. Problem 1 </a>
+
+<a href = #problem50> 50. Pow(x, n) </a> 
 
 --------------------------------------
 
-7. Reverse Integer (Medium)  <br>
+<a id = "problem7">7. Reverse Integer (Medium)  <br></a>
 
 Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32 bit integer range [-2<sup>32</sup>, 2<sup>31</sup>-1] then return 0. <br>
 
@@ -62,7 +64,7 @@ Constraints: <ul><li>
 
 ---------------------------------------------------
 
-50. Pow(x, n)  (Medium,  powxn.cpp) <br>
+<a id = "problem50">50. Pow(x, n)  (Medium,  powxn.cpp) <br> </a>
 Implement pow(x, n) which calculates x raised to the power n (i.e., x<sup>n</sup>)
 
 Example 1: 
