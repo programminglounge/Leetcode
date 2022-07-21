@@ -121,7 +121,7 @@ The integer division should truncate toward zero, which means losing its fractio
   <li>divisor != 0 </li>
   </ul>
 
-<a herf = "https://github.com/programminglounge/Leetcode/blob/main/DivideTwoIntegers.cpp"> Solution in C++ </a>
+<a herf = #https://github.com/programminglounge/Leetcode/blob/main/DivideTwoIntegers.cpp> Solution in C++ </a>
 
 ---------------------------------------------------
 
