@@ -121,7 +121,7 @@ The integer division should truncate toward zero, which means losing its fractio
   <li>divisor != 0 </li>
   </ul>
 
-<p><a href = "/blob/main/DivideTwoIntegers.cpp"> Solution in C++ </a></p>
+<p><a href = "DivideTwoIntegers.cpp"> Solution in C++ </a></p>
 
 ---------------------------------------------------
 
