@@ -3,7 +3,7 @@ In this repository I solve some of the medium and hard problems on Leetcode
 
 <a href = #problem7>7. Reverse Integer (Medium)</a>
 
-<a href = #problem29>29. Problem 1 </a>
+<a href = #problem29>29. Divide Two Integers </a>
 
 <a href = #problem50> 50. Pow(x, n) </a> 
 
@@ -29,141 +29,127 @@ In this repository I solve some of the medium and hard problems on Leetcode
 
 <a href = #problem1921> 1921. Eliminate Maximum Number of Monsters (Medium) </a>
 
-1936. Add Minimum number of Rungs (Medium)
+<a href = #problem1936> 1936. Add Minimum number of Rungs (Medium) </a>
 
-1980. Find Unique Binary String (Medium)
+<a href = #problem1980> 1980. Find Unique Binary String (Medium) </a>
 
-2007. Find Original Array from Doubled Array (Medium)
+<a href = #problem2007> 2007. Find Original Array from Doubled Array (Medium) </a>
 
-2058. Find the Minimum and Maximum Number of Nodes Between Critical Points (Medium)
+<a href = #problem2058> 2058. Find the Minimum and Maximum Number of Nodes Between Critical Points (Medium) </a>
 
-2063. Vowels of All Substrings (Medium)
+<a href = #problem2063> 2063. Vowels of All Substrings (Medium) </a>
 
-2064. Minimized Maximum of Products Distributed to Any Store (Medium)
+<a href = #problem2064> 2064. Minimized Maximum of Products Distributed to Any Store (Medium) </a>
 
-2075. Decode the slanted Ciphertext (Medium)
+<a href = #problem2075> 2075. Decode the slanted Ciphertext (Medium) </a>
 
-2139. Minimum Moves to Reach Target Score (Medium)
+<a href = #problem2139> 2139. Minimum Moves to Reach Target Score (Medium) </a>
 
-2150. Find All Lonely Numbers in the Array (Medium)
+<a href = #problem2150> 2150. Find All Lonely Numbers in the Array (Medium) </a>
 
-2183. Count Array Pairs Divisble by K (Hard)
+<a href = #problem2183> 2183. Count Array Pairs Divisble by K (Hard) </a>
 
-2186. Minimum Number of Steps to Make Two Strings Anagram II (Medium)
+<a href = #problem2186> 2186. Minimum Number of Steps to Make Two Strings Anagram II (Medium) </a>
 
-2191. Sort the Jumbled Numbers (Medium)
+<a href = #problem2191> 2191. Sort the Jumbled Numbers (Medium) </a>
 
-2225. Find players with zero or one losses (Medium)
+<a href = #problem2225> 2225. Find players with zero or one losses (Medium) </a>
 
-2226. Maximum Candies Allocated to K Children (Medium)
+<a href = #problem2226> 2226. Maximum Candies Allocated to K Children (Medium) </a>
 
-2233. Maximum Product After K Increments (Medium)
+<a href = #problem2233> 2233. Maximum Product After K Increments (Medium) </a>
 
-2240. Number of Ways to Buy Pens and Pencils (Medium)
+<a href = #problem2240> 2240. Number of Ways to Buy Pens and Pencils (Medium) </a>
 
-2244. Minimum Rounds to Complete All tasks
+<a href = #problem2244> 2244. Minimum Rounds to Complete All tasks </a>
 
-2249. Count Lattice Points inside a Circle (Medium)
+<a href = #problem2249> 2249. Count Lattice Points inside a Circle (Medium) </a>
 
-2289. Steps to Make Array Non-decreasing (Medium)
+<a href = #problem2289> 2289. Steps to Make Array Non-decreasing (Medium) </a>
 
-2300. Successful Pairs of Spells and Potions (Medium)
+<a href = #problem2300> 2300. Successful Pairs of Spells and Potions (Medium) </a>
 
-2320. Count Number of Ways to Place Houses (Medium)
+<a href = #problem2320> 2320. Count Number of Ways to Place Houses (Medium) </a>
 
-2322. The Latest Time to Catch a Bus (Medium)
+<a href = #problem2322> 2322. The Latest Time to Catch a Bus (Medium) </a>
 
-2333. Minimum Sum of Squared Difference (Medium)
+<a href = #problem2333> 2333. Minimum Sum of Squared Difference (Medium) </a>
 
 --------------------------------------
 
-<a id = "problem7">7. Reverse Integer (Medium)  <br></a>
+<a id = "problem7">7. Reverse Integer (Medium) </a> <br><br>
 
 Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32 bit integer range [-2<sup>32</sup>, 2<sup>31</sup>-1] then return 0. <br>
 
 <b>Assume the enviornment does not allow you to store 64 bit integers (signed or unsigned)</b><br>
 
-Example 1: <br>
+<b>Example 1:</b> <br>
+<b>Input:</b> x = 123 <br>
+<b>Output:</b> 321 <br><br>
 
-Input: x = 123 <br>
-Output: 321 <br><br>
+<b>Example 2:</b><br>
+<b>Input:</b> x= -123 <br>
+<b>Output:</b> -321 <br><br>
 
-Example 2:<br>
+<b>Example 3:</b> <br>
+<b>Input:</b> x = 120 <br>
+<b>Output:</b> 21 <br><br>
 
-Input: x= -123 <br>
-Output: -321 <br><br>
-
-Example 3: <br>
-Input: x = 120 <br>
-Output: 21 <br><br>
-
-Constraints:<ul><li>
+<b>Constraints:</b><br>
+<ul><li>
   -2<sup>31</sup> <= x <= 2<sup>31</sup>-1 </li></ul>
 
 ----------------------------------------------------
 
-29. Given two integers dividend and divisor divide two integers without using multiplication, division and mod operator.<br>
+<a id = "problem29">29. Divide Two Integers</a><br><br>
+Given two integers dividend and divisor divide two integers without using multiplication, division and mod operator.<br>
 The integer division should truncate toward zero, which means losing its fractional part.
 
-Example 1:
-<br>
-<b>Input</b>: dividend = 10, divisor = 3
-<br>
-<b>Output</b>: 3
-<br>
-<b>Explanation</b>: 10/3 = 3.3333 which is truncated to 3.
-<br>
-<br>
+<b>Example 1:</b> <br>
+<b>Input:</b> dividend = 10, divisor = 3 <br>
+<b>Output:</b> 3 <br>
+<b>Explanation:</b> 10/3 = 3.3333 which is truncated to 3. <br>
 
-Example 2:
-<br>
-<b>Input</b>: dividend = 7, divisor = -3
-<br>
-<b>Output</b>: -2
-<br>
-<b>Explanation</b>: 7/-3 = -2.3333 which is truncated to -2.
-<br>
-<br>
+<b>Example 2:</b> <br>
+<b>Input:</b> dividend = 7, divisor = -3 <br>
+<b>Output:</b> -2 <br>
+<b>Explanation</b>: 7/-3 = -2.3333 which is truncated to -2. <br>
 
-Constraints: <ul><li>
+<b>Constraints:</b> <br>
+<ul><li>
   -2<sup>31</sup> <= dividend, divisor <= 2<sup>31</sup> -1 </li>
   <li>divisor != 0 </li>
   </ul>
 
+<a herf = "https://github.com/programminglounge/Leetcode/blob/main/DivideTwoIntegers.cpp"> Solution in C++ </a>
+
 ---------------------------------------------------
 
-<a id = "problem50">50. Pow(x, n)  (Medium,  powxn.cpp) <br> </a>
+<a id = "problem50">50. Pow(x, n)  (Medium,  powxn.cpp) </a>  <br><br>
 Implement pow(x, n) which calculates x raised to the power n (i.e., x<sup>n</sup>)
 
-Example 1: 
-<br>
-<b>Input</b>: x= 2.0, n = 10
-<br>
-Output: 1024.0
-<br>
+<b>Example 1:</b> <br>
+<b>Input:</b> x= 2.0, n = 10 <br>
+<b>Output:</b> 1024.0 <br>
 
-Example 2: 
-<br>
-  <b>Input</b>: x= 2.1, n = 3
-<br>
-  <b>Output</b>: 9.261
-<br>
+<b>Example 2:</b> <br>
+<b>Input:</b> x= 2.1, n = 3 <br>
+<b>Output:</b> 9.261 <br>
 
-Example 3:
-<br>
-<b>Input</b>: x = 2.0, n = -2
-<br>
-<b>Output</b>: 0.25
+<b>Example 3:</b><br>
+<b>Input:</b> x = 2.0, n = -2 <br>
+<b>Output:</b> 0.25 <br>
 
-<b>Constraints:</b> <ul><li>
-  -100.0 < x < 100.0</li>
+<b>Constraints:</b><br> 
+<ul>
+  <li>-100.0 < x < 100.0</li>
   <li>-2<sup>31</sup> <= n <= 2<sup>31</sup>-1</li>
-<li>-10<sup>4</sup> <= x<sup>n</sup> <= 10<sup>4</sup></li>
+  <li>-10<sup>4</sup> <= x<sup>n</sup> <= 10<sup>4</sup></li>
 </ul>
 
 --------------------------------------------------
 
-172. Factorial Trailing Zeroes (Medium, TrailingZeros.cs)
+<a id = "problem172"> 172. Factorial Trailing Zeroes (Medium, TrailingZeros.cs) </a> <br><br>
 
 Given an integer n, return the number of trailing zeros in n!
 
@@ -182,26 +168,25 @@ Given an integer n, return the number of trailing zeros in n!
 <b>Output:</b> 0 <br>
 
 <b>Constraints:</b><br>
-
 <ul><li> 0 <= n <= 10<sup>4</sup> </li></ul>
 
 -----------------------------------------------------------------------------
 
-189. Rotate Array (Medium) <br>
+<a id = "problem189"> 189. Rotate Array (Medium)</a> <br><br> 
 
 Given an array, rotate the array to the right by k steps, where k is non-negative.<br>
 
 <b>Example 1:</b><br>
 <b>Input:</b> nums = [1, 2, 3, 4, 5, 6, 7], k=3 <br>
-<b>Output :</b> [5, 6, 7, 1, 2, 3, 4]<br>
+<b>Output:</b> [5, 6, 7, 1, 2, 3, 4]<br>
 <b>Explanation:</b><br>
 rotate 1 step to the right: [7, 1, 2, 3, 4, 5, 6] <br>
 rotate 2 steps to the right: [6, 7, 1, 2, 3, 4, 5] <br>
 rotate 3 steps to the right: [5, 6, 7, 1, 2, 3, 4] <br>
 
 <b>Example 2:</b><br>
-<b>Input:</b> nums = [-1, -100, 3, 99], k=2 <br><br>
-<b>Output :</b> [3, 99, -1, -100]<br><br>
+<b>Input:</b> nums = [-1, -100, 3, 99], k=2 <br>
+<b>Output:</b> [3, 99, -1, -100]<br>
 <b>Explanation:</b><br>
 rotate 1 step to the right: [99, -1, -100, 3] <br>
 rotate 2 steps to the right: [3, 99, -1, -100] <br>
@@ -214,28 +199,27 @@ rotate 2 steps to the right: [3, 99, -1, -100] <br>
   
 -------------------------------------------------------------------
 
-198. House Robber (Medium) <br>
+<a id = "problem198"> 198. House Robber (Medium) </a> <br><br>
 
 You are a professional robber pkanning to rob houses along a street. Each house has a certain amount of money stashed,
 the only constraint stopping you from robbing each of them is that adjeacent houses have security systems conneced 
 and it will automatically contact the police if two adjeacent houses were broken into on the same night. <br>
 
-Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight 
-without alerting the police. <br>
+Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight  without alerting the police. <br>
 
-Example 1: <br>
-<b>Input</b>: nums = [1, 2, 3, 1] <br>
-<b>Output</b>: 4 <br>
-Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3) <br>
+<b>Example 1:</b> <br>
+<b>Input:</b> nums = [1, 2, 3, 1] <br>
+<b>Output:</b> 4 <br>
+<b>Explanation:</b> Rob house 1 (money = 1) and then rob house 3 (money = 3) <br>
 Total amount you can rob = 1 + 3 = 4 <br>
 
-Example 2: <br>
-<b>Input</b>: nums = [2, 7, 9, 3, 1] <br>
-<b>Output</b>: 12 <br>
-<b>Explanation</b>: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1) <br>
+<b>Example 2:</b> <br>
+<b>Input:</b> nums = [2, 7, 9, 3, 1] <br>
+<b>Output:</b> 12 <br>
+<b>Explanation:</b> Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1) <br>
 Total amount you can rob = 2+9+1= 12 <br>
 
-Constraints:
+<b>Constraints:</b><br>
 <ul>
   <li> 1<= nums.length <= 100 </li>
   <li> 0 <= nums[i] <= 400 </li>
@@ -243,26 +227,26 @@ Constraints:
 
 ---------------------------------------------------
 
-315. Count of Smaller Numbers After Self (Hard) <br><br>
-You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
+<a id = "problem315"> 315. Count of Smaller Numbers After Self (Hard)</a> <br><br> 
+You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i]. <br>
 
-Example 1: <br>
-<b>Input</b>: nums = [5, 2, 6, 1] <br>
-<b>Output</b>: [2, 1, 1, 0] <br>
-Explanation: To the right of 5 there are 2 smaller elements (2 and 1) <br>
+<b>Example 1:</b> <br>
+<b>Input:</b> nums = [5, 2, 6, 1] <br>
+<b>Output:</b> [2, 1, 1, 0] <br>
+<b>Explanation:</b> To the right of 5 there are 2 smaller elements (2 and 1) <br>
 To the right of 2 there is only 1 smaller element (1). <br>
 To the right of 6 there is 1 smaller element(1) <br>
 To the right of 1 there is 0 smaller element. <br>
 
-Example 2: <br>
-<b>Input</b>: nums = [-1] <br>
-<b>Output</b>: [0] <br>
+<b>Example 2:</b> <br>
+<b>Input:</b> nums = [-1] <br>
+<b>Output:</b> [0] <br>
 
-Example 3: <br>
-<b>Input</b>: nums = [-1, -1] <br>
-<b>Output</b>: [0, 0] <br>
+<b>Example 3:</b> <br>
+<b>Input:</b> nums = [-1, -1] <br>
+<b>Output:</b> [0, 0] <br>
 
-Constraints:
+<b>Constraints:</b><br>
 <ul><li>
   1 <= nums.length <= 10<sup>5 </sup> </li>
   <li>-10<sup>4</sup> <= nums[i] <= 10<sup>4 </sup></li>
@@ -270,7 +254,7 @@ Constraints:
 
 --------------------------------------------------
 
-857. Minimum Cost to Hire K Workers (Hard) <br> 
+<a id = "problem857"> 857. Minimum Cost to Hire K Workers (Hard)</a> <br><br>
 
 There are n workers. You are given two integer arrays quailty and wage where quality[i] is the quality of the ith worker and wage[i]
 is the minimum wage expectation for the ith worker. We want to hire exactly k workers to form a paid group. To hire
@@ -295,7 +279,7 @@ Example 2: <br>
 <b>Output</b>: 30.6667 <br>
 <b>Explanation</b>: we pay 4 to the 0<sup>th</sup> worker and 13.3333 to the 2<sup>nd</sup> and 3<sup>rd</sup> worker seperately <br>
 
-Constraints:
+<b>Constraints:</b><br>
 <ul> 
   <li>n == quality.length == wage.length</li>
   <li>1 <= k <= n <= 10<sup>4</sup></li>
@@ -303,7 +287,7 @@ Constraints:
 
 --------------------------------------------------------------------
 
-907. Sum of Subarray Minimums (Medium) <br><br>
+<a id = "problem907"> 907. Sum of Subarray Minimums (Medium) </a> <br><br>
 Given an array of integers arr, find the sum of min(b), where b ranges over every (contiguous) subarray of arr.
 Since the answer may be large, return the answer modulo 10<sup>9</sup>+7 <br>
 
@@ -319,14 +303,14 @@ Sum is 17 <br>
 <b>Input</b>: arr = [11, 81, 94, 43, 3] <br>
 <b>Output</b>: 444 <br>
 
-Constraints:
+<b>Constraints:</b><br>
 <ul><li>1 <= arr.length <= 3 *10<sup>4</sup></li>
   <li> 1 <= arr[i] <= 3 *10<sup>4</sup></li>
 </ul>
 
 --------------------------------------------------------------------------------
 
-1488. Avoid Flood in The City (Medium) <br>
+<a id = "problem1488"> 1488. Avoid Flood in The City (Medium)</a> <br><br>
 
 Your country has an infinite number of lakes. Initially, all the lakes are empty, but when it rains over the nth lake, the nth lake becomes full of water. If it rains over a lake that is full of water, there will be a <b>flood</b>. Your goal is to avoid floods in any lake. <br>
 
@@ -342,18 +326,18 @@ Return an array ans where: <br><ul>
 If there are multiple valid answers return any of them. If it is impossible to avoid floods return <b>an empty array</b>
 Notice that if you chose to dry a full lake, it becomes empty, but if you chose to dry an empty lake, nothing changes.
 
-Example 1:
-Input: rains = [1, 2, 3, 4] <br>
-Output : [-1, -1, -1, -1] <br>
-Explanation: After the first day full lakes are [1] <br>
+<b>Example 1:</b><br>
+<b>Input:</b> rains = [1, 2, 3, 4] <br>
+<b>Output:</b> [-1, -1, -1, -1] <br>
+<b>Explanation:</b> After the first day full lakes are [1] <br>
 After the second day full lakes are [1, 2] <br>
 After the third day full lakes are [1, 2, 3] <br>
 After the fourth day full lakes are [1, 2, 3, 4] <br>
 There's no day to dry any lake and there is no flood in any lake <br>
 
-Example 2:<br>
-<b>Input</b>: rains = [1, 2, 0, 0, 2, 1] <br>
-<b>Output</b> : [-1, -1, 2, 1, -1, -1] <br>
+<b>Example 2:</b><br>
+<b>Input:</b> rains = [1, 2, 0, 0, 2, 1] <br>
+<b>Output:</b>  [-1, -1, 2, 1, -1, -1] <br>
 <b>Explanation</b>: After the first day full lakes are [1] <br>
 After the second day full lakes are [1, 2] <br>
 After the third day we dry lake 2. Full lakes are [1] <br>
@@ -362,19 +346,19 @@ After the fifth day, full lakes are [2]. <br>
 After the sixth day, full lakes are [1, 2]. <br>
 It is easy to that this scenario is flood-free. [-1, -1, 1, 2, -1, -1] is another acceptable scenario. <br>
 
-Example 3: <br>
-<b>Input</b>: rains = [1, 2, 0, 1, 2] <br>
-<b>Output</b>: [] <br>
+<b>Example 3:</b> <br>
+<b>Input:</b> rains = [1, 2, 0, 1, 2] <br>
+<b>Output:</b> [] <br>
 <b>Explanation</b>: After the second day, full lakes are [1, 2]. We have to dry one lake on the third day. After that, it will rain over lakes [1, 2]. It's easy to prove that no matter which lake you choose to dry in the 3rd day, the other one will flood.
 
-Constraints:
+<b>Constraints:</b><br>
 <ul><li> 1 <= rains.length <= 10<sup>5</sup> </li>
   <li> 0<=rains[i] <= 10<sup>9</sup></li>
   </ul>
   
 ------------------------------------------------------------------------------------
 
-1877. Minimize Maximum Pair Sum in Array (Medium) <br>
+<a id = "problem1877"> 1877. Minimize Maximum Pair Sum in Array (Medium) </a> <br><br>
 
 The <b>pair sum</b> of a pair (a, b) is equal to a+b. The maximum pair sum is the largest pair sum in a list of pairs. <br>
 
@@ -406,7 +390,7 @@ Return the minimized <b>maximum pair sum</b> after optimally pairing up the elem
   
 ----------------------------------------------------------------------------
 
-1881. Maximum Value after Insertion (Medium) <br><br>
+<a id = "problem1881"> 1881. Maximum Value after Insertion (Medium) </a> <br><br>
 
 You are given a very large integer n, represented as a string, and an integer digit x. The digits in n and the digit x are in the <b>inclusive</b> range [1, 9], and n may represent a <b>negative</b> number.
 You want to <b>maximize</b> n's numerical value by inserting x anywhere in the decimal represnetaton of n. You cannot insert x to the left of the negative sign. <br>
@@ -416,7 +400,7 @@ You want to <b>maximize</b> n's numerical value by inserting x anywhere in the d
   
 Return a string representing the maximum value of n after the insertion:
 
-<b>Example 1:</b> <br>
+<b>Example 1:</b><br>
 <b>Input:</b> n = "99", x = 9 <br>
 <b>Output:</b> "999" <br>
 <b>Explanation:</b> The result is the same regardless of where you insert 9.<br>
@@ -435,7 +419,7 @@ Return a string representing the maximum value of n after the insertion:
 
 --------------------------------------------------------------------------------------
 
-1910. Remove All occurrences of a Substring (Medium) <br><br>
+<a id = "problem1910"> 1910. Remove All occurrences of a Substring (Medium) </a> <br><br>
 
 Given two strings s and part, perform the following operation on s until all occurrences of the substring part are removed:
 <ul><li> Find the <b>leftmost</b> occurrence of the substring part and <b>remove</b> it from s.</li></ul> <br>
@@ -463,7 +447,7 @@ Now s has no occurrences of "abc"<br>
 - s = "a<b>xy</b>b", remove "xy" starting at index 1, so s = "ab"<br>
 Now s has no occurrences of "ab"<br>
 
-<b>Constraints:</b>
+<b>Constraints:</b><br>
 <ul><li> 1<= s.length <= 1000  </li>
   <li>1 <= part.length <= 1000 </li>
   <li> s and part consists of lowercase English letters.</li>
@@ -471,7 +455,7 @@ Now s has no occurrences of "ab"<br>
 
 -----------------------------------------------------------------
 
-1921. Eliminate Maximum Number of Monsters (Medium) <br><br>
+<a id = "problem1921"> 1921. Eliminate Maximum Number of Monsters (Medium) </a> <br><br>
 
 You are playing a video game where you are defending your city from a group of n monsters. You are given a <b>0-indexed</b> integer array dist of size n, where dist[i] is the <b>initial distance</b> in kilometers of the i<sup>th</sup> monster from the city. <br>
 
@@ -512,7 +496,7 @@ You can only eliminate 1 monster<br>
   
 ------------------------------------------------------------------ 
 
-1936. Add Minimum number of Rungs (Medium) <br><br>
+<a id = "problem1936"> 1936. Add Minimum number of Rungs (Medium) </a> <br><br>
 
 You are given a <b>strictly increasing</b> integer array rungs that represents the <b>height</b> of rungs on a ladder. You are currently on the <b>floor</b> at height 0, and you want to reach the last rung. <br>
 
@@ -543,7 +527,7 @@ Return the <b>minimum</b> number of rungs that must be added to the ladder in or
 
 --------------------------------------------------
 
-1980. Find Unique Binary String (Medium) <br><br>
+<a id = "problem1980"> 1980. Find Unique Binary String (Medium) </a> <br><br>
 
 Given an array of strings nums cotaining n <b>unique</b> binary strings each of length n, return a binary string of length n that does not appear in nums. If there are multiple answers, you may return <b>any</b> of them<br>
 
@@ -560,11 +544,17 @@ Explanation: "11" does not appear in nums, "00" would also be correct.<br><br>
 <b>Example 3:</b> <br>
 <b>Input:</b> nums = ["111", "011", "001"]<br>
 <b>Output:</b> "101"<br>
-<b>Explanation:</b> "101" does not appear in nums. "000", "010", "100", and "110" would also be correct.
+<b>Explanation:</b> "101" does not appear in nums. "000", "010", "100", and "110" would also be correct. <br>
+
+<b>Constraints:</b><br>
+<ul><li>1 <= rungs.length <= 10<sup>5</sup></li>
+  <li>1 <= rungs[i] <= 10<sup>9</sup></li>
+  <li> 1<= dist <= 10<sup>9</sup></li>
+  <li> rungs is <b>strictly increasing</b></li></ul>
 
 -------------------------------------------------------------------------
 
-2007. Find Original Array from Doubled Array (Medium) <br><br>
+<a id = "problem2007"> 2007. Find Original Array from Doubled Array (Medium) </a><br><br>
 
 An integer array original is transformed into a doubled array changed by appending twice the value of every element in original, and then randomly shuffling the resulting array.<br>
 
@@ -595,7 +585,7 @@ Constraints:
 
 --------------------------------------------------------------------------
 
-2058. Find the Minimum and Maximum Number of Nodes Between Critical Points (Medium) <br><br>
+<a id = "problem2058"> 2058. Find the Minimum and Maximum Number of Nodes Between Critical Points (Medium)</a> <br><br>
 
 A <b>critical point</b> in a linked list is defined as <b>either</b> a <b>local maxima</b> or a <b>local minima.</b>
 A node is a <b>local maxima</b> if the current node has a value <b>strictly greater</b> than the previous node and the next node. <br>
@@ -636,7 +626,7 @@ Note that the last node is not considered a local maxima because it does not hav
   
 -----------------------------------------------------------------------
 
-2063. Vowels of All Substrings (Medium) <br><br>
+<a id = "problem2063"> 2063. Vowels of All Substrings (Medium) </a> <br><br>
 
 Given a string word, return the sum of the number of vowels ('a', 'e', 'i', 'o' and 'u') in every substring of word
 A substring is a contiguous (non-empty) sequence of characters within a string. <br>
@@ -645,34 +635,35 @@ Note: Due to the large constraints, the answer may not fit in a signed 32 bit in
 
 <b>Example 1:</b> <br>
 <b>Input:</b> word = "aba" <br>
-Output: 6 <br>
-Exaplanation: All possible substrings are "a", "ab", "aba", "b", "ba", and "a". <br>
+<b>Output:</b> 6 <br>
+<b>Exaplanation:</b> All possible substrings are "a", "ab", "aba", "b", "ba", and "a". <br>
 "b" has 0 vowels in it <br>
 "a", "ab", "ba" and "a" have 1 vowel each <br>
 "aba" has 2 vowels in it <br>
 Hence, the total sum of vowels = 0+1+1+1+1+2 = 6 <br>
 
 <b>Example 2:</b> <br>
-Input: word = "abc" <br>
-Output: 3 <br>
-Explanation: All possible substrings are "a", "ab", "abc", "b", "bc" and "c" <br>
+<b>Input:</b> word = "abc" <br>
+<b>Output:</b> 3 <br>
+<b>Explanation:</b> All possible substrings are "a", "ab", "abc", "b", "bc" and "c" <br>
 "a", "ab" and "abc" have 1 vowel each <br>
 "b", "bc" and "c" have 0 vowels each <br>
 Hence the sum of vowels = 1 + 1 + 1 + 0 + 0 + 0 = 3 <br>
 
-Example 3: <br>
-Input: word = "ltcd"
-Output: 0
-Explanation: There are no vowels in any substring of "ltcd" <br>
+<b>Example 3:</b> <br>
+<b>Input:</b> word = "ltcd" <br>
+<b>Output:</b> 0 <br>
+<b>Explanation:</b> There are no vowels in any substring of "ltcd" <br>
 
-Constraints: <ul><li>
+<b>Constraints:</b> <br>
+<ul><li>
   1 <= word.length <= 10<sup>5</sup> </li>
   <li>word consists of lowecase English letters</li>
   </ul>
 
 ----------------------------------------------------------------
 
-2064. Minimized Maximum of Products Distributed to Any Store (Medium) <br><br>
+<a id = "problem2064"> 2064. Minimized Maximum of Products Distributed to Any Store (Medium)</a> <br><br>
 
 You are given an integer n indicating there are n specialty retail stores. There are m product types of varying amounts which are given as a 0-indexed integer array quantities, where quantities[i] represents the number of products of the i<sup>th</sup> product type. You need to distribute all products to the retail stores following these rules:
 
@@ -706,14 +697,14 @@ The maximum number of products given to any store is max(5, 5, 5, 5, 5, 5, 5) = 
 The maximum number of products given to any store is max(10000) = 10000<br><br>
 
 
-<b>Constraints</b>
+<b>Constraints:</b><br>
 <ul><li> m ==quantities.length</li>
 <li> 1 <=m <= n <= 10 <sup>5</sup></li>
 <li>1 <= quantities[i] <= 10<sup>5</sup></li></ul>
 
 ------------------------------------------------------------------
 
-2075. Decode the slanted Ciphertext (Medium) <br><br>
+<a id = "problem2075"> 2075. Decode the slanted Ciphertext (Medium) </a> <br><br>
 
 A string originalText is encoded using a <b>slanted transposition cipher</b> to a string encodedText with the hep of a matrix having a <b>fixed number of rows</b> rows <br>
  
@@ -753,7 +744,7 @@ Note: originalText <b>does not</b> have any trailing spaces ' ' . The test cases
 
 --------------------------------------------------------------------
 
-2139. Minimum Moves to Reach Target Score (Medium) <br><br>
+<a id = "problem2139"> 2139. Minimum Moves to Reach Target Score (Medium) </a> <br><br>
 
 You are playing a game with integers. You start with the integer 1 and you want to reach the integer target.
 
@@ -765,14 +756,14 @@ You can use the <b>increment</b> operation amu number of times, however you can 
 
 Given the two integers target and maxDoubles, return the minimum number of moves needed to reach target starting with 1.
 
-Example 1:
-Input: target = 5, maxDoubles = 0
-Output: 4
-Explanation: Keep incrementing by 1 until you reach target
+<b>Example 1:</b><br>
+<b>Input:</b> target = 5, maxDoubles = 0 <br>
+<b>Output:</b> 4 <br>
+<b>Explanation:</b> Keep incrementing by 1 until you reach target <br>
 
-Example 2:
+<b>Example 2:</b><br>
 <b>Input:</b> target = 19, maxDoubles = 2 <br>
-<b>Output:</b> 7<br>
+<b>Output:</b> 7 <br>
 <b>Explanation:</b> Initially, x=1<br> 
 Increment 3 times so x= 4 <br>
 Double once so x = 8<br>
@@ -789,13 +780,13 @@ Double once so x = 4 <br>
 Increment once so x = 5 <br>
 Double again so x = 10 <br>
 
-<b>Constraints:</b>
-<ul><li>1 <=target <= 10<sup>9</sup></li></ul>
+<b>Constraints:</b><br>
+<ul><li>1 <=target <= 10<sup>9</sup></li>
 <li> 0 <= maxDoubles <= 100</li></ul>
 
 ----------------------------------------------------------------------------
 
-2150. Find All Lonely Numbers in the Array (Medium) <br><br>
+<a id = "problem2150"> 2150. Find All Lonely Numbers in the Array (Medium) </a> <br><br>
 
 You are given an integer array nums. A number x is <b>lonely</b> when it appears only once, and no <b>adjacent</b> numbers (i.e. x+1 and x-1) appear in the array.
 Return all lonely numbers in nums. You may return the answer in <b>any order</b>.<br>
@@ -824,7 +815,7 @@ Hence, the lonely numbers in nums are [1, 5]<br>
   
 ------------------------------------------------------------------------
 
-2183. Count Array Pairs Divisble by K (Hard) <br><br>
+<a id = "problem2183"> 2183. Count Array Pairs Divisble by K (Hard) </a> <br><br>
 
 Given a zero indexed integer array nums of length n and an integer k, return the <b>number of pairs</b> (i, j) such that:
 <ul><li> 0<= i < j <= n-1 and</li>
@@ -838,17 +829,17 @@ Their products are 2, 4, 6, 8, 10, 12 and 20 respectively
 Other pairs such as (0, 2) and (2, 4) have products 3 and 15 repectively, which are not divisible by 2. <br>
 
 <b>Example 2:</b><br>
-<b>Input: </b>nums = [1, 2, 3, 4], k=5<br>
-<b>Output: </b> 0 <br>
-<b>Explanation: </b>There does not exist any pair of indices whose corresponding product is divisible by 5<br>
+<b>Input:</b> nums = [1, 2, 3, 4], k=5<br>
+<b>Output:</b> 0 <br>
+<b>Explanation:</b> There does not exist any pair of indices whose corresponding product is divisible by 5<br>
 
-<b>Constraints: </b>
+<b>Constraints: </b><br>
 <ul><li> 1<= nums.length <= 10<sup>5</sup></li>
   <li> 1 <= nums[i], k <= 10<sup>5</sup></li></ul>
   
 --------------------------------------------------------------------------
 
-2186. Minimum Number of Steps to Make Two Strings Anagram II (Medium)<br><br>
+<a id = "problem2186"> 2186. Minimum Number of Steps to Make Two Strings Anagram II (Medium) </a> <br><br>
 
 You are given two strings s and t. In one step, you can append <b>any character</b> to either s or t.<br>
 
@@ -858,7 +849,7 @@ An anagram of a string is a string that contains the sma e characters with a dif
 
 <b>Example 1:</b><br>
 <b>Input:</b> s= "leetcode", t = "coats"<br>
-<b>Output: 7</b><br>
+<b>Output:</b> 7<br>
 <b>Explanation:</b><br>
 - In 2 steps, we can append the letters in "as" onto s = "leetcode", forming s = "leetcodeas".<br>
 - In 5 steps, we can append the letters in "leede" onto t = "coats", forming t = "coatsleede".<br>
@@ -868,15 +859,15 @@ we used a total of 2+7 = 7 steps. It can be shown that there is no way to make t
 <b>Example 2:</b><br>
 <b>Input:</b> s= "night", t = "thing" <br>
 <b>Output:</b> 0<br>
-<b>Explanation:</b> The given strings are already anagrams of eachother. Thus, we do not need any further steps.
+<b>Explanation:</b> The given strings are already anagrams of eachother. Thus, we do not need any further steps.<br>
 
 <b>Constraints:</b><br>
-<ul><li> 1 <= s.length, t.length <=2*10<sup>5</sup>
+<ul><li> 1 <= s.length, t.length <=2*10<sup>5</sup></li>
   <li> s and t consist of lowercase English letters.</li></ul>
   
 ----------------------------------------------------------------------------
 
-2191. Sort the Jumbled Numbers (Medium) <br><br>
+<a id = "problem2191"> 2191. Sort the Jumbled Numbers (Medium) </a> <br><br>
 
 You are given a <b>0-indexed</b> integer array mapping which represents the mapping rule of a shuffled decimal system. mapping[i] = j means digit i should be mapped to digit j in this system.<br>
 
@@ -890,8 +881,8 @@ You are also given anoter integer array nums. Return the array nums sorted in no
 
 <b>Example 1:</b> <br>
 <b>Input:</b> mapping = [8, 9, 4, 0, 2, 1, 3, 5, 7, 6], nums = [991, 338, 38] <br>
-<b>Output: </b> [338, 38, 991] <br>
-<b>Explanation: </b> <br>
+<b>Output:</b> [338, 38, 991] <br>
+<b>Explanation:</b> <br>
 Map the number 991 as follows: <br>
 1. Mapping[9] = 6, so all occurences of the digit 9 will become 6. <br>
 2. Mapping[1] = 9, so all occurences of the digit 1 will become 9. <br>
@@ -900,11 +891,11 @@ Therefore, the mapped value of 991 is 669. 338 maps to 007, or 7, which is also 
 Thus, the sorted array is [338, 38, 991]. <br>
 
 <b>Example 2:</b><br>
-<b>Input: </b> mapping = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], nums = [789, 456, 123] <br>
-<b>Output :</b> [123, 456, 789]
-<b> Explanation: </b> 789 maps to 789, 456 maps to 456, and 123 maps to 123. Thus the sorted array is [123, 456, 789].
+<b>Input:</b> mapping = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], nums = [789, 456, 123] <br>
+<b>Output:</b> [123, 456, 789] <br>
+<b>Explanation: </b> 789 maps to 789, 456 maps to 456, and 123 maps to 123. Thus the sorted array is [123, 456, 789]. <br>
 
-<b>Constraints:</b>
+<b>Constraints:</b><br>
 <ul><li> mapping.length == 10 </li>
   <li> 0 <= mapping[i] <= 9 </li>
   <li> All the values of mapping[i] are <b>unique</b> </li>
@@ -913,7 +904,7 @@ Thus, the sorted array is [338, 38, 991]. <br>
   
 --------------------------------------------------------------------------------
 
-2225. Find players with zero or one losses (Medium) <br><br>
+<a id = "problem2225"> 2225. Find players with zero or one losses (Medium) </a> <br><br>
 
 You are given an integer array matches where matches[i]=[winner<sub>i</sub>, loser<sub>i</sub>] indicates that the player winner<sub>i</sub> defeated player loser<sub>i</sub> in a match. <br>
 
@@ -935,10 +926,10 @@ The values in the two lists should be returned in <b>increasing</b> order.
 <b>Example 2:</b><br>
 <b>Input: </b>matches = [[2, 3], [1, 3], [5, 4], [6, 4]]
 <b>Output: </b>[[1, 2, 5, 6], []]
-<b>Explanation: </b> Players 1, 2, 5, and 6 have not lost any matches. Players 3 and 4 each have lost two matches. Thus, answer[0]=[1, 2, 5, 6] and answer[1] = []
+<b>Explanation: </b> Players 1, 2, 5, and 6 have not lost any matches. Players 3 and 4 each have lost two matches. Thus, answer[0]=[1, 2, 5, 6] and answer[1] = [] <br>
 
 
-<b>Constraints: </b>
+<b>Constraints: </b><br>
 <ul><li>1 <= matches.length <= 10<sup>5</sup></li>
   <li> matches[i].length == 2 </li>
   <li> 1 <= winner<sub>i</sub>, loser<sub>i</sub> <= 10<sup>5</sup></li>
@@ -947,7 +938,7 @@ The values in the two lists should be returned in <b>increasing</b> order.
   
 ---------------------------------------------------------------------------
 
-2226. Maximum Candies Allocated to K Children (Medium) <br><br>
+<a id = "problem2226"> 2226. Maximum Candies Allocated to K Children (Medium) </a> <br><br>
 
 You are given a <b>0-indexed</b> integer array candies. Each element in the array denotes a pile of candies of size candies[i]. You can divide each pile into any number of <b>sub piles</b>, but you <b>cannot</b> merge two piles together. <br>
   
@@ -956,7 +947,7 @@ You are also given an integer K. You should allocate piles of candies to k child
 Return the <b>maximum number of candies</b> each child can get. <br>
 
 <b>Example 1:</b><br>
-<b>Input: </b> candies: [5, 8, 6], k = 3 <br>
+<b>Input:</b> candies: [5, 8, 6], k = 3 <br>
 <b>Output:</b> 5 <br>
 <b>Explanation:</b> We can divide candies[1] into 2 piles of size 5 and 3, and candies[2] into 2 piles of size 5 and 1. We now have five piles of candies of sizes 5, 5, 3, 5, and 1. We can allocate the the 3 piles of size 5 to 3 children. It can be proven that each child cannot receive more than 5 candies. <br>
 
@@ -972,22 +963,22 @@ Return the <b>maximum number of candies</b> each child can get. <br>
   
 -----------------------------------------------------------------
 
-2233. Maximum Product After K Increments (Medium) <br><br>
+<a id = "problem2233"> 2233. Maximum Product After K Increments (Medium) </a> <br><br>
 
 You are given an array of non-negative integers nums and an integer k. In one operation, you may choose <b>any</b> element from nums and increment it by 1
 Return the maximum product of nums after at most k operations. Since the answe may be very large return ir modulo 10<sup>9</sup> + 7
 
 <b>Example 1:</b><br>
-Input: nums = [0, 4], k = 5 <br>
+<b>Input:</b> nums = [0, 4], k = 5 <br>
 <b>Output:</b> 20 <br>
-Explanation: Increment the first number 5 times. Now nums = [5, 4], with a product of 5*4 = 20 <br>
+<b>Explanation:</b> Increment the first number 5 times. Now nums = [5, 4], with a product of 5*4 = 20 <br>
 It can be shown that 20 is maximum product possible, so we return 20<br>
 Note that there may be other ways to increment nums to have the maximum product <br>
 
-Example 2:
-Input: nums = [6, 3, 3, 2], k = 2
-Output: 216
-Explanation: Increment the second number 1 time and increment the fourth number 1 time.
+<b>Example 2:</b><br>
+<b>Input:</b> nums = [6, 3, 3, 2], k = 2 <br>
+<b>Output:</b> 216 <br>
+<b>Explanation:</b> Increment the second number 1 time and increment the fourth number 1 time.
 Now nums =[6, 4, 3, 3], with a product of 6*4*3*3 = 216 <br>
 It can be shown that 216 is maximum product
 
@@ -997,14 +988,14 @@ It can be shown that 216 is maximum product
 
 -------------------------------------------------------------------------------------------
 
-2240. Number of Ways to Buy Pens and Pencils (Medium) <br><br>
+<a id = "problem2240"> 2240. Number of Ways to Buy Pens and Pencils (Medium) </a> <br><br>
 
 You are given an integer total indicating the total amount of money you have. You are also given two integers cost1 and cost2 indicating the price of a pen and pencil respectively. You can spend part or all of your money to buy multiple quantities (or none) of each kind of writing utensil.<br>
   
 Return the number of distinct ways you can buy some number of pens and pencils.<br>
   
 <b>Example 1:</b><br>
-Input: total = 20, cost1 = 10, cost2 = 5<br>
+<b>Input:</b> total = 20, cost1 = 10, cost2 = 5<br>
 Output: 9<br>
 Explanation: The price of a pen is 10 and the price of a pencil is 5.<br>
 -If you buy 0 pens, you can buy 0, 1, 2, 3 or 4 pencils<br>
@@ -1017,39 +1008,39 @@ Input: total = 5, cost1 = 10, cost2 = 10 <br>
 Output: 1 <br>
 Explanation: The price of both pens and pencils are 10, which cost more than total, so you cannot buy any writing utensils. Therefore, there is only one way: buy 0 pens and 0 pencils<br>
   
-Constraints:<br>
-  <ul><li> 1 <= total, cost1, cost2 <= 10<sup>6</sup></li></ul><br>
+<b>Constraints:</b><br>
+  <ul><li> 1 <= total, cost1, cost2 <= 10<sup>6</sup></li></ul>
     
 -----------------------------------------------------------------------
 
-2244. Minimum Rounds to Complete All tasks <br><br>
+<a id = "problem2244"> 2244. Minimum Rounds to Complete All tasks </a> <br><br>
 
 You are given a 0-indexed integer array tasks, where tasks[i] represents the difficulty level of a task. In each round, you can complete either 2 or 3 tasks of the same <b>difficulty level</b>.
 Return the <b>minimum</b> rounds required to complete all the tasks or -1 if it is not possible to complete all the tasks. Br>
   
 <b>Example 1:</b><br>
 <b>Input:</b> tasks = [2, 2, 3, 3, 2, 4, 4, 4, 4, 4] <br>
-Output: 4
-Explanation: To complete all the tasks, a possible plan is: 
--In the first round, you complete 3 tasks of difficulty level 2
--In the second round, you complete 2 tasks of difficulty level 3
--In the third round, you complete 3 tasks of difficulty level 4
--In the fourth round, you complete 2 tasks of difficulty level 4
-It can be shown that all the tasks cannot be completed in fewer than 4 rounds, so the answer is 4
+<b>Output:</b> 4 <br>
+<b>Explanation:</b> To complete all the tasks, a possible plan is: <br> 
+-In the first round, you complete 3 tasks of difficulty level 2 <br>
+-In the second round, you complete 2 tasks of difficulty level 3 <br>
+-In the third round, you complete 3 tasks of difficulty level 4 <br>
+-In the fourth round, you complete 2 tasks of difficulty level 4 <br>
+It can be shown that all the tasks cannot be completed in fewer than 4 rounds, so the answer is 4 <br>
 
-Example 2:
-Input: tasks = [2, 3, 3]
-Output: -1
-Explanation: There is only 1 task of difficulty level 2, but in each round, you can only complete either 
-2 or 3 tasks of the same difficulty level. Hence you cannot complete all the tasks, and the answer is -1.
+<b>Example 2:</b><br>
+<b>Input:</b> tasks = [2, 3, 3] <br>
+<b>Output:</b> -1 <br>
+<b>Explanation:</b> There is only 1 task of difficulty level 2, but in each round, you can only complete either 
+2 or 3 tasks of the same difficulty level. Hence you cannot complete all the tasks, and the answer is -1. <br>
   
-Constraints:
+<b>Constraints:</b><br>
   <ul><li> 1<= tasks.length <=10<sup>5</sup> </li>
   <li> 1 <= tasks[i] <= 10<sup>9</sup> </li></ul>
   
 ------------------------------------------------------------------------------------
 
-2249. Count Lattice Points inside a Circle (Medium) <br><br>
+<a id = "problem2249"> 2249. Count Lattice Points inside a Circle (Medium) </a> <br><br>
 
 Given a 2D integer array circles where circles[i] = [x<sub>i</sub>, y<sub>i</sub>, r<sub>i</sub>] represents the center (x<sub>i</sub>, y<sub>i</sub>) and radius r<sub>i</sub> of the i<sup>th</sup> circle drawn on a grid, return the <b>number of lattice points</b> that are present inside <b>at least one circle</b>
 
@@ -1076,7 +1067,7 @@ Other points such as (1, 1) and (1, 3) are not considered inside the circle. Hen
 
 ------------------------------------------------------------------
 
-2289. Steps to Make Array Non-decreasing (Medium) <br><br>
+<a id = "problem2289"> 2289. Steps to Make Array Non-decreasing (Medium) </a> <br><br>
 You are given a 0-indexed integer array nums. In one step, remove all elements nums[i] where nums[i-1] > nums[i] for all 0<i<nums.length <br>
 
 Return the number of steps performed until nums becomes a <b>non-decreasing</b> array.
@@ -1102,7 +1093,7 @@ Return the number of steps performed until nums becomes a <b>non-decreasing</b> 
     
 --------------------------------------------------------------------
 
-2300. Successful Pairs of Spells and Potions (Medium) <br><br>
+<a id = "problem2300"> 2300. Successful Pairs of Spells and Potions (Medium)</a> <br><br>
 
 You are given two positive integer arrays spells and potions of length n and m respectively, where spells[i] represents the strength of the i<sup>th</sup> spell and potions[j] represents the strength of the j<sup>th</sup> potion. <br>
 
@@ -1126,8 +1117,7 @@ Explanation: 0<sup>th</sup> spell: 3 * [8, 5, 8] = [<b>24</b>, 15, <b>24</b>]. 2
 2<sup>nd</sup> spell: 2 * [8, 5, 8] = [<br>16</br>, 10, <br>16</br>]. 2 pairs are successful. <br>
 Thus [2, 0, 2] is returned. <br>
 
-<b>Constraints:</b>
-
+<b>Constraints:</b><br>
 <ul><li>n == spells.length </li>
 <li>m == potions.length </li>
 <li>1 <= n, m <= 10<sup>5</sup> </li>
@@ -1136,7 +1126,7 @@ Thus [2, 0, 2] is returned. <br>
 
 -------------------------------------------------------------------------------
 
-2320. Count Number of Ways to Place Houses (Medium) <br><br>
+<a id = "problem2320"> 2320. Count Number of Ways to Place Houses (Medium) </a> <br><br>
 
 There is a street with n*2 <b>plots</b> where there are n plots on each side of the street. The plots on each side are numbered from 1 to n. On each plot, a house can be placed. <br>
 
@@ -1165,7 +1155,7 @@ Possible arrangements:<br>
 
 -------------------------------------------------------------------------------------------------
 
-2322. The Latest Time to Catch a Bus (Medium) <br><br>
+<a id = "problem2322"> 2322. The Latest Time to Catch a Bus (Medium) </a> <br><br>
 
 You are given a <b>0-indexed</b> integer array buses of length n, where buses[i] represents the departure time of the i<sup>th</sup> bus. You are also given a <b>0-indexed</b> integer array passengers of length m, where passengers[j] represents the arrival time of the j<sup>th</sup> passenger. All bus departure times are unique. All passenger arrival times are unique. <br>
 
@@ -1201,7 +1191,7 @@ The 3<sup>rd</sup> bus departs with the 1<sup>st</sup> passenger and you. <br>
 
 -------------------------------------------------------------------------------------------
 
-2333. Minimum Sum of Squared Difference (Medium) <br><br>
+<a id = "problem2333"> 2333. Minimum Sum of Squared Difference (Medium) </a> <br><br>
 
 You are given two positive <b>0-indexed</b> integer arrays nums1 and nums2, both of length n.
 
