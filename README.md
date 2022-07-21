@@ -1,7 +1,5 @@
 # Leetcode
 In this repository I solve some of the medium and hard problems on Leetcode 
-<style>
-</style>
 
 <a href = #problem7>7. Reverse Integer (Medium)</a>
 
@@ -14,6 +12,8 @@ In this repository I solve some of the medium and hard problems on Leetcode
 <a href = #problem189> 189. Rotate Array (Medium) </a>
 
 <a href = #problem198> 198. House Robber (Medium) </a>
+
+<a href = #problem201> 201. Bitwise AND of Numbers Range (Medium) </a>
 
 <a href = #problem315> 315. Count of Smaller Numbers After Self (Hard) </a>
 
@@ -149,6 +149,9 @@ Implement pow(x, n) which calculates x raised to the power n (i.e., x<sup>n</sup
   <li>-10<sup>4</sup> <= x<sup>n</sup> <= 10<sup>4</sup></li>
 </ul>
 
+<p><a href = "powxn.cpp"> Solution in C++ </a></p>
+<p><a href = "powxn.cs"> Solution in C# </a></p>
+
 --------------------------------------------------
 
 <a id = "problem172"> 172. Factorial Trailing Zeroes (Medium, TrailingZeros.cs) </a> <br><br>
@@ -171,6 +174,8 @@ Given an integer n, return the number of trailing zeros in n!
 
 <b>Constraints:</b><br>
 <ul><li> 0 <= n <= 10<sup>4</sup> </li></ul>
+
+<p><a href = "TrailingZeros.cs"> Solution in C# </a></p>
 
 -----------------------------------------------------------------------------
 
@@ -227,7 +232,17 @@ Total amount you can rob = 2+9+1= 12 <br>
   <li> 0 <= nums[i] <= 400 </li>
 </ul>
 
+<p><a href = "rob.cpp"> Solution in C++ </a></p>
+
 ---------------------------------------------------
+
+<a id = "problem201"> 201. House Robber (Medium) </a> <br><br>
+
+You are a professional robber pkanning to rob houses along a street. Each house has a certain amount of money 
+
+<p><a href = "RangeBitwiseAnd.cs"> Solution in C# </a></p>
+
+--------------------------------------
 
 <a id = "problem315"> 315. Count of Smaller Numbers After Self (Hard)</a> <br><br> 
 You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i]. <br>
@@ -253,6 +268,8 @@ To the right of 1 there is 0 smaller element. <br>
   1 <= nums.length <= 10<sup>5 </sup> </li>
   <li>-10<sup>4</sup> <= nums[i] <= 10<sup>4 </sup></li>
   </ul>
+
+<p><a href = "countsmaller.cpp"> Solution in C++ </a></p>
 
 --------------------------------------------------
 
@@ -287,6 +304,9 @@ Example 2: <br>
   <li>1 <= k <= n <= 10<sup>4</sup></li>
   <li>1 <= quality[i], wage[i] <= 10<sup>4</sup></li></ul>
 
+<p><a href = "MinCost.cpp"> Solution in C++ </a></p>
+
+
 --------------------------------------------------------------------
 
 <a id = "problem907"> 907. Sum of Subarray Minimums (Medium) </a> <br><br>
@@ -309,6 +329,8 @@ Sum is 17 <br>
 <ul><li>1 <= arr.length <= 3 *10<sup>4</sup></li>
   <li> 1 <= arr[i] <= 3 *10<sup>4</sup></li>
 </ul>
+
+<p><a href = "SumSubArrayMins2.cpp"> Solution in C++ </a></p>
 
 --------------------------------------------------------------------------------
 
@@ -358,6 +380,8 @@ It is easy to that this scenario is flood-free. [-1, -1, 1, 2, -1, -1] is anothe
   <li> 0<=rains[i] <= 10<sup>9</sup></li>
   </ul>
   
+<p><a href = "avoidflood.cpp"> Solution in C++ </a></p> 
+  
 ------------------------------------------------------------------------------------
 
 <a id = "problem1877"> 1877. Minimize Maximum Pair Sum in Array (Medium) </a> <br><br>
@@ -389,7 +413,9 @@ Return the minimized <b>maximum pair sum</b> after optimally pairing up the elem
   <li> 2 <= n <= 10<sup>5</sup></li>
   <li><b>n</b> is even</li>
   <li> 1 <= nums[i] <= 10<sup>5</sup></li></ul>
-  
+
+<p><a href = "minPairSum.py"> Solution in Python </a></p> 
+ 
 ----------------------------------------------------------------------------
 
 <a id = "problem1881"> 1881. Maximum Value after Insertion (Medium) </a> <br><br>
@@ -418,6 +444,8 @@ Return a string representing the maximum value of n after the insertion:
   <li>The digits in n are in the range [1, 9]</li>
   <li> n is a valid representation of an integer.</li>
   <li> in the case of a negative n, it will begin with '-' </li></ul>
+
+<p><a href = "maxValue.py"> Solution in Python </a></p> 
 
 --------------------------------------------------------------------------------------
 
@@ -454,6 +482,10 @@ Now s has no occurrences of "ab"<br>
   <li>1 <= part.length <= 1000 </li>
   <li> s and part consists of lowercase English letters.</li>
 </ul>
+
+<p><a href = "removeOccurrences.cpp"> Solution in C++ </a></p> 
+<p><a href = "removeOccurrences.py"> Solution in Python </a></p> 
+<p><a href = "RemoveOccurrences.cs"> Solution in C# </a></p> 
 
 -----------------------------------------------------------------
 
@@ -496,6 +528,8 @@ You can only eliminate 1 monster<br>
   <li> 1 <= n <= 10 <sup>5</sup></li>
   <li> 1 <= dist[i], speed[i] <=10<sup>5</sup></li></ul>
   
+<p><a href = "eliminateMaximum.cpp"> Solution in C++ </a></p>  
+  
 ------------------------------------------------------------------ 
 
 <a id = "problem1936"> 1936. Add Minimum number of Rungs (Medium) </a> <br><br>
@@ -527,6 +561,8 @@ Return the <b>minimum</b> number of rungs that must be added to the ladder in or
   <li> 1<= dist <= 10<sup>9</sup></li>
   <li> rungs is <b>strictly increasing</b></li></ul>
 
+
+
 --------------------------------------------------
 
 <a id = "problem1980"> 1980. Find Unique Binary String (Medium) </a> <br><br>
@@ -553,6 +589,8 @@ Explanation: "11" does not appear in nums, "00" would also be correct.<br><br>
   <li>1 <= rungs[i] <= 10<sup>9</sup></li>
   <li> 1<= dist <= 10<sup>9</sup></li>
   <li> rungs is <b>strictly increasing</b></li></ul>
+
+<p><a href = "FindDifferentBinaryString.cpp"> Solution in C++ </a></p>  
 
 -------------------------------------------------------------------------
 
@@ -584,6 +622,8 @@ Explanation: changed is not a doubled array
 Constraints:
 <ul><li> changed.length <= 10<sup>5</sup></li>
 <li>0 <= changed[i] <= 10<sup>5</sup></li></ul>
+
+<p><a href = "FindOriginalArray.cpp"> Solution in C++ </a></p>  
 
 --------------------------------------------------------------------------
 
@@ -663,6 +703,9 @@ Hence the sum of vowels = 1 + 1 + 1 + 0 + 0 + 0 = 3 <br>
   <li>word consists of lowecase English letters</li>
   </ul>
 
+<p><a href = "countvowels.cpp"> Solution in C++ </a></p>  
+
+
 ----------------------------------------------------------------
 
 <a id = "problem2064"> 2064. Minimized Maximum of Products Distributed to Any Store (Medium)</a> <br><br>
@@ -704,6 +747,9 @@ The maximum number of products given to any store is max(10000) = 10000<br><br>
 <li> 1 <=m <= n <= 10 <sup>5</sup></li>
 <li>1 <= quantities[i] <= 10<sup>5</sup></li></ul>
 
+<p><a href = "minimizedMaximum.py"> Solution in Python </a></p>  
+
+
 ------------------------------------------------------------------
 
 <a id = "problem2075"> 2075. Decode the slanted Ciphertext (Medium) </a> <br><br>
@@ -743,6 +789,8 @@ Note: originalText <b>does not</b> have any trailing spaces ' ' . The test cases
   <li>encodedText is a valid encoding of some originalText that <b>does not</b> have trailing spaces.</li>
   <li> 1 <= rows <= 1000</li>
   <li> The testcases are generated such that there is <b>only one possible originalText </li></ul>
+
+
 
 --------------------------------------------------------------------
 
@@ -814,7 +862,10 @@ Hence, the lonely numbers in nums are [1, 5]<br>
 <b>Constraints:</b><br>
 <ul><li> 1<= nums.length <=10<sup>5</sup></li>
   <li> 0 <= nums[i] <= 10<sup>6</sup></li></ul>
-  
+
+
+<p><a href = "FindLonely.py"> Solution in Python </a></p>   
+
 ------------------------------------------------------------------------
 
 <a id = "problem2183"> 2183. Count Array Pairs Divisble by K (Hard) </a> <br><br>
@@ -838,7 +889,9 @@ Other pairs such as (0, 2) and (2, 4) have products 3 and 15 repectively, which 
 <b>Constraints: </b><br>
 <ul><li> 1<= nums.length <= 10<sup>5</sup></li>
   <li> 1 <= nums[i], k <= 10<sup>5</sup></li></ul>
-  
+
+<p><a href = "countpairs.py"> Solution in Python </a></p> 
+
 --------------------------------------------------------------------------
 
 <a id = "problem2186"> 2186. Minimum Number of Steps to Make Two Strings Anagram II (Medium) </a> <br><br>
@@ -867,6 +920,8 @@ we used a total of 2+7 = 7 steps. It can be shown that there is no way to make t
 <ul><li> 1 <= s.length, t.length <=2*10<sup>5</sup></li>
   <li> s and t consist of lowercase English letters.</li></ul>
   
+<p><a href = "minSteps.py"> Solution in Python </a></p> 
+ 
 ----------------------------------------------------------------------------
 
 <a id = "problem2191"> 2191. Sort the Jumbled Numbers (Medium) </a> <br><br>
@@ -903,7 +958,9 @@ Thus, the sorted array is [338, 38, 991]. <br>
   <li> All the values of mapping[i] are <b>unique</b> </li>
   <li> 1 <= nums.length <= 3* 10<sup>4</sup></li>
   <li> 0 <= nums[i] < 10<sup>9</sup></li></ul>
-  
+
+<p><a href = "mapping.py"> Solution in Python </a></p> 
+
 --------------------------------------------------------------------------------
 
 <a id = "problem2225"> 2225. Find players with zero or one losses (Medium) </a> <br><br>
@@ -937,7 +994,9 @@ The values in the two lists should be returned in <b>increasing</b> order.
   <li> 1 <= winner<sub>i</sub>, loser<sub>i</sub> <= 10<sup>5</sup></li>
   <li> winner<sub>i</sub> != loser<sub>i</sub></li>
   <li> All matches[i] are <b>unique</b></li></ul>
-  
+
+<p><a href = "foundplayers.py"> Solution in Python </a></p> 
+
 ---------------------------------------------------------------------------
 
 <a id = "problem2226"> 2226. Maximum Candies Allocated to K Children (Medium) </a> <br><br>
@@ -963,6 +1022,9 @@ Return the <b>maximum number of candies</b> each child can get. <br>
   <li> 1 <= candies[i] <= 10<sup>7</sup></li>
   <li> 1 <= k <= 10<sup>12</sup></li></ul>
   
+<p><a href = "maximumCandies.py"> Solution in Python </a></p> 
+ 
+
 -----------------------------------------------------------------
 
 <a id = "problem2233"> 2233. Maximum Product After K Increments (Medium) </a> <br><br>
@@ -988,6 +1050,9 @@ It can be shown that 216 is maximum product
 <ul><li> 1 <= nums.length, k <=10<sup>5</sup></li>
   <li> 0 <= nums[i] <=10<sup>6</sup></li></ul>
 
+<p><a href = "MaximumProduct.cpp"> Solution in C++ </a></p> 
+<p><a href = "MinimumProduct.cs"> Solution in C# </a></p>
+
 -------------------------------------------------------------------------------------------
 
 <a id = "problem2240"> 2240. Number of Ways to Buy Pens and Pencils (Medium) </a> <br><br>
@@ -1012,6 +1077,8 @@ Explanation: The price of both pens and pencils are 10, which cost more than tot
   
 <b>Constraints:</b><br>
   <ul><li> 1 <= total, cost1, cost2 <= 10<sup>6</sup></li></ul>
+ 
+ 
     
 -----------------------------------------------------------------------
 
@@ -1039,7 +1106,9 @@ It can be shown that all the tasks cannot be completed in fewer than 4 rounds, s
 <b>Constraints:</b><br>
   <ul><li> 1<= tasks.length <=10<sup>5</sup> </li>
   <li> 1 <= tasks[i] <= 10<sup>9</sup> </li></ul>
-  
+ 
+ 
+ 
 ------------------------------------------------------------------------------------
 
 <a id = "problem2249"> 2249. Count Lattice Points inside a Circle (Medium) </a> <br><br>
@@ -1067,7 +1136,16 @@ Other points such as (1, 1) and (1, 3) are not considered inside the circle. Hen
   <li> circles[i].length == 3 </li>
   <li> 1 <= r<sub>i</sub> <= min(x<sub>i</sub>, y<sub>i</sub>) </li></ul>
 
+<p><a href = "countLatticePoints.py"> Solution in Python </a></p> 
+
 ------------------------------------------------------------------
+
+<a id = "problem2256"> 2256. Minimum Average Difference </a> <br><br>
+
+
+<p><a href = "minimumAverageDifference.cpp"> Solution in C++ </a></p> 
+
+------------------------------------------------------------------------
 
 <a id = "problem2289"> 2289. Steps to Make Array Non-decreasing (Medium) </a> <br><br>
 You are given a 0-indexed integer array nums. In one step, remove all elements nums[i] where nums[i-1] > nums[i] for all 0<i<nums.length <br>
@@ -1092,7 +1170,9 @@ Return the number of steps performed until nums becomes a <b>non-decreasing</b> 
 <b>Constraints:</b>
 <ul><li>1 <= nums.length <= 10<sup>5</sup></li>
   <li> 1 <= nums[i] <= 10<sup>9</sup></li></ul>
-    
+
+<p><a href = "totalsteps.cpp"> Solution in C++ </a></p> 
+
 --------------------------------------------------------------------
 
 <a id = "problem2300"> 2300. Successful Pairs of Spells and Potions (Medium)</a> <br><br>
@@ -1126,6 +1206,8 @@ Thus [2, 0, 2] is returned. <br>
 <li>1 <= spells[i], potions[i] <= 10<sup>5</sup> </li>
 <li>1 <= success <= 10<sup>10</sup> </li></ul>
 
+
+
 -------------------------------------------------------------------------------
 
 <a id = "problem2320"> 2320. Count Number of Ways to Place Houses (Medium) </a> <br><br>
@@ -1151,9 +1233,9 @@ Possible arrangements:<br>
 <b>Output:</b> 9 <br>
 <b>Explanation:</b> The 9 possible arrangements are shown in the diagram above<br>
 
-<b>Constraints:</b>
-
+<b>Constraints:</b><br>
 <ul><li> 1<= n<= 10<sup>4</sup></li></ul>
+
 
 -------------------------------------------------------------------------------------------------
 
@@ -1227,3 +1309,5 @@ Note that, there are other ways to obtain the minimum of the sum of square diffe
 <li> 0 <= k1, k2 <= 10<sup>9</sup> </li></ul>
 
 ----------------------------------------------------------------
+
+  
