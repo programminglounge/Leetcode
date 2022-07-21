@@ -1,5 +1,8 @@
 # Leetcode
 In this repository I solve some of the medium and hard problems on Leetcode 
+<style>
+p {color:red;}  
+</style>
 
 <a href = #problem7>7. Reverse Integer (Medium)</a>
 
